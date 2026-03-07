@@ -30,6 +30,8 @@ The new website targets **all shared living residents** — not just students, b
 | [WAVE](https://wave.webaim.org/) | 0 Errors | Accessibility (WCAG) |
 | [Google Rich Results Test](https://search.google.com/test/rich-results) | Pass | Structured Data (Schema.org) |
 
+**Prozess:** Diese Tools werden nach **jeder neuen Version** ausgeführt. Ergebnisse werden in der jeweiligen `CHANGES.md` dokumentiert. Gefundene Probleme werden unten im Abschnitt "Known Issues / Next Fixes" eingetragen und in der nächsten Version behoben.
+
 ### Design Direction
 
 Modern, Gen-Z friendly. No 2015-Bootstrap feel. Aligned with what young people expect today.
@@ -137,6 +139,12 @@ Each section has its own tailored content — but all share the same foundation 
 - **360° Touren** (`data/wg-nuernberg-legacy/assets/tour/`):
   - `wg-gras-11-1/`, `wg-gras-11-2/`, `wg-gras-15-1/`, `wg-gras-21-2/`
 - **Video:** Placeholder — real video still to be produced
+
+## Known Issues / Next Fixes
+
+*Hier werden Probleme aus den Quality Checks eingetragen, die in der nächsten Version behoben werden sollen.*
+
+_(noch keine — wird nach dem ersten Quality Check befüllt)_
 
 ## Notes
 
