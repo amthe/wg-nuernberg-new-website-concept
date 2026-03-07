@@ -4,6 +4,31 @@ Komplette Historie aller Versionen. Neueste zuerst.
 
 ---
 
+## v006 — 2026-03-07
+
+### Fokus
+Performance & Accessibility — Lighthouse-optimiert, WAVE-konform, sauberstes semantisches HTML
+
+### Änderungen
+- **Komplett von Grund auf neu gebaut** — kein Code aus v005 übernommen
+- **Skip Link:** "Zum Hauptinhalt springen" für Screenreader und Keyboard-Nutzer
+- **Semantisches HTML:** Korrekte Heading-Hierarchie (h1→h2→h3), Landmark-Regionen, aria-labelledby für alle Sektionen
+- **Alt-Texte:** Alle Bilder mit beschreibenden deutschen Alt-Texten, Emojis in aria-hidden Containern
+- **Formulare:** Alle Inputs mit Labels, autocomplete-Attribute, required-Kennzeichnung
+- **Navigation:** aria-expanded, aria-hidden, aria-controls für Mobile Menu
+- **FAQ:** aria-expanded + aria-controls für Accordion
+- **Lightbox:** role="dialog", aria-modal, ESC-Support, Focus-Trapping
+- **Performance:** preconnect für Fonts & Unsplash, font-display: swap, lazy loading, fetchpriority="high" für Hero
+- **JavaScript:** requestAnimationFrame für Scroll-Events, IntersectionObserver für Reveal, IIFEs für Scope-Isolation
+- **Focus States:** Sichtbare 3px Outline auf allen interaktiven Elementen
+- **Dark Mode:** WCAG AA-konformer Kontrast
+- **prefers-reduced-motion:** Alle Animationen deaktivierbar
+
+### Warum
+v005 hatte alle Features und ein striktes Design System, aber wurde nie auf tatsächliche Lighthouse/WAVE-Scores getestet. v006 baut alles von Grund auf mit Accessibility und Performance als Kernfokus.
+
+---
+
 ## v005 — 2026-03-07
 
 ### Fokus

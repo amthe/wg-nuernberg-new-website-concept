@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WG Nürnberg - Dein WG-Zimmer in der Lorenzer Altstadt. Ab 450€ all-in, keine Provision, keine Besichtigung nötig. Seit 2002.">
+  <title>WG Nürnberg - WG-Zimmer in der Altstadt ab 450€</title>
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+
+  <!-- Google Fonts with display swap -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Skip Link for Accessibility -->
+  <a href="#main" class="skip-link">Zum Hauptinhalt springen</a>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" role="presentation" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="container header__inner">
+      <a href="/" class="header__logo" aria-label="WG Nürnberg - Zur Startseite">
+        <img src="assets/logos/wg-nuernberg-grey-optimized.svg" alt="WG Nürnberg Logo" width="120" height="40">
+      </a>
+
+      <nav class="header__nav" role="navigation" aria-label="Hauptnavigation">
+        <a href="#about" class="header__nav-link">Über uns</a>
+        <a href="#location" class="header__nav-link">Lage</a>
+        <a href="#rooms" class="header__nav-link">Freie Zimmer</a>
+        <a href="#benefits" class="header__nav-link">Vorteile</a>
+        <a href="#faq" class="header__nav-link">FAQ</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="header__theme-toggle" aria-label="Farbschema wechseln" type="button">
+          <span aria-hidden="true">☀️</span>
+        </button>
+        <a href="#contact" class="btn btn--primary header__cta">Anfragen</a>
+        <button class="header__menu-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-nav" type="button">
+          <span class="header__menu-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobile-nav" role="navigation" aria-label="Mobile Navigation" aria-hidden="true">
+    <a href="#about" class="mobile-nav__link">Über uns</a>
+    <a href="#location" class="mobile-nav__link">Lage</a>
+    <a href="#rooms" class="mobile-nav__link">Freie Zimmer</a>
+    <a href="#benefits" class="mobile-nav__link">Vorteile</a>
+    <a href="#faq" class="mobile-nav__link">FAQ</a>
+    <a href="#contact" class="btn btn--primary btn--full mobile-nav__cta">Anfragen</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main">
+
+    <!-- 1. Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg">
+        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1920&q=80" alt="Fröhliche junge Menschen in einer WG" width="1920" height="1080" fetchpriority="high">
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__content">
+        <span class="badge badge--hero hero__badge">Seit 2002 in der Lorenzer Altstadt</span>
+        <h1 id="hero-title" class="hero__title">Miete dein <span class="text-gradient">WG-Zimmer</span> bei WG Nürnberg</h1>
+        <p class="hero__subtitle">Ab 450€ all-in. Keine Provision. Keine Besichtigung nötig.</p>
+        <div class="hero__buttons">
+          <a href="#contact" class="btn btn--primary btn--large">Jetzt anfragen</a>
+          <a href="https://wa.me/4915123456789" class="btn btn--whatsapp btn--large" target="_blank" rel="noopener noreferrer">
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Über uns Section -->
+    <section id="about" class="section--surface" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about__grid reveal">
+          <div class="about__content">
+            <h2 id="about-title">Über WG Nürnberg</h2>
+            <p class="about__text">
+              Seit 2002 bieten wir jungen Menschen ein Zuhause in der Lorenzer Altstadt.
+              Wir sind keine anonyme Kurzzeitvermietung, sondern echte WGs mit Gemeinschaftsgefühl.
+              Unser Team ist vor Ort und kümmert sich um alles.
+            </p>
+            <div class="about__stats">
+              <div class="about__stat">
+                <span class="about__stat-value">20+</span>
+                <span class="about__stat-label">Jahre Erfahrung</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-value">120+</span>
+                <span class="about__stat-label">Bewohner</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-value">20+</span>
+                <span class="about__stat-label">Nationalitäten</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-value">17</span>
+                <span class="about__stat-label">WGs</span>
+              </div>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="assets/img/gras11-1-1024-o_8.jpg" alt="Gemütliche WG-Küche in der Grasstraße 11" loading="lazy" width="1024" height="768">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Lage Section -->
+    <section id="location" aria-labelledby="location-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-header__eyebrow">Lage</span>
+          <h2 id="location-title" class="section-header__title">Mitten in der Altstadt</h2>
+          <p class="section-header__description">Zentral gelegen mit perfekter Anbindung an Unis, Kliniken und öffentliche Verkehrsmittel.</p>
+        </header>
+
+        <div class="location__grid reveal">
+          <div class="location__map">
+            <img src="assets/img/wg-map.svg" alt="Karte mit allen WG-Standorten in der Nürnberger Altstadt" width="600" height="400" loading="lazy">
+          </div>
+          <div class="location__distances">
+            <h3>Entfernungen</h3>
+
+            <div class="location__group">
+              <p class="location__group-title"><span aria-hidden="true">🚶</span> Zu Fuß</p>
+              <ul class="location__list">
+                <li class="location__item"><span>Hauptbahnhof</span><span class="location__time">6 min</span></li>
+                <li class="location__item"><span>U-Bahn Opernhaus</span><span class="location__time">3 min</span></li>
+                <li class="location__item"><span>Lorenzkirche</span><span class="location__time">6 min</span></li>
+                <li class="location__item"><span>Supermärkte</span><span class="location__time">10 min</span></li>
+              </ul>
+            </div>
+
+            <div class="location__group">
+              <p class="location__group-title"><span aria-hidden="true">🚲</span> Mit dem Fahrrad</p>
+              <ul class="location__list">
+                <li class="location__item"><span>TH Nürnberg</span><span class="location__time">6 min</span></li>
+                <li class="location__item"><span>FAU WiSo</span><span class="location__time">7 min</span></li>
+                <li class="location__item"><span>EVHN</span><span class="location__time">6 min</span></li>
+                <li class="location__item"><span>Musikhochschule</span><span class="location__time">12 min</span></li>
+                <li class="location__item"><span>Design OHM</span><span class="location__time">8 min</span></li>
+              </ul>
+            </div>
+
+            <div class="location__group">
+              <p class="location__group-title"><span aria-hidden="true">🚆</span> Mit der Bahn</p>
+              <ul class="location__list">
+                <li class="location__item"><span>AdBK Nürnberg</span><span class="location__time">30 min</span></li>
+                <li class="location__item"><span>FAU Erlangen</span><span class="location__time">28 min</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Freie Zimmer Section -->
+    <section id="rooms" class="section--surface" aria-labelledby="rooms-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-header__eyebrow">Freie Zimmer</span>
+          <h2 id="rooms-title" class="section-header__title">Jetzt verfügbar</h2>
+          <p class="section-header__description">Unsere aktuellen Angebote - alle Preise inklusive Nebenkosten, WiFi und Strom.</p>
+        </header>
+
+        <div class="grid grid--auto reveal">
+          <!-- Room 1 -->
+          <article class="card room-card">
+            <div class="room-card__header">
+              <h3 class="room-card__title">Grasstraße 11</h3>
+              <span class="badge badge--studenten">Studenten</span>
+            </div>
+            <div class="room-card__details">
+              <div class="room-card__detail"><span>Größe</span><span>18 m²</span></div>
+              <div class="room-card__detail"><span>Verfügbar ab</span><span>01.04.2026</span></div>
+            </div>
+            <p class="room-card__price">490€ <span>/ Monat all-in</span></p>
+            <a href="#contact" class="btn btn--primary btn--full">Anfragen</a>
+          </article>
+
+          <!-- Room 2 -->
+          <article class="card room-card">
+            <div class="room-card__header">
+              <h3 class="room-card__title">Grasstraße 15</h3>
+              <span class="badge badge--mediziner">Mediziner</span>
+            </div>
+            <div class="room-card__details">
+              <div class="room-card__detail"><span>Größe</span><span>22 m²</span></div>
+              <div class="room-card__detail"><span>Verfügbar ab</span><span>15.04.2026</span></div>
+            </div>
+            <p class="room-card__price">550€ <span>/ Monat all-in</span></p>
+            <a href="#contact" class="btn btn--primary btn--full">Anfragen</a>
+          </article>
+
+          <!-- Room 3 -->
+          <article class="card room-card">
+            <div class="room-card__header">
+              <h3 class="room-card__title">Klarastraße 2</h3>
+              <span class="badge badge--studenten">Studenten</span>
+            </div>
+            <div class="room-card__details">
+              <div class="room-card__detail"><span>Größe</span><span>14 m²</span></div>
+              <div class="room-card__detail"><span>Verfügbar ab</span><span>Sofort</span></div>
+            </div>
+            <p class="room-card__price">450€ <span>/ Monat all-in</span></p>
+            <a href="#contact" class="btn btn--primary btn--full">Anfragen</a>
+          </article>
+
+          <!-- Room 4 -->
+          <article class="card room-card">
+            <div class="room-card__header">
+              <h3 class="room-card__title">Sternstraße 1</h3>
+              <span class="badge badge--inklusive">Inklusive</span>
+            </div>
+            <div class="room-card__details">
+              <div class="room-card__detail"><span>Größe</span><span>25 m²</span></div>
+              <div class="room-card__detail"><span>Verfügbar ab</span><span>01.05.2026</span></div>
+            </div>
+            <p class="room-card__price">580€ <span>/ Monat all-in</span></p>
+            <a href="#contact" class="btn btn--primary btn--full">Anfragen</a>
+          </article>
+        </div>
+
+        <p class="rooms__note">Aktualisiert täglich um 08:00 Uhr</p>
+      </div>
+    </section>
+
+    <!-- 5. Vorteile Section -->
+    <section id="benefits" aria-labelledby="benefits-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-header__eyebrow">Vorteile</span>
+          <h2 id="benefits-title" class="section-header__title">Warum WG Nürnberg?</h2>
+          <p class="section-header__description">Alles, was du für einen entspannten Start brauchst.</p>
+        </header>
+
+        <div class="grid grid--3 reveal">
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">💰</div>
+            <h3 class="card__title">Keine Provision</h3>
+            <p class="card__text">Du mietest direkt bei uns - ohne Makler und ohne versteckte Kosten.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">📝</div>
+            <h3 class="card__title">Eigener Mietvertrag</h3>
+            <p class="card__text">Jeder Bewohner hat seinen eigenen Vertrag - unabhängig von Mitbewohnern.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">📶</div>
+            <h3 class="card__title">Echte Flatrate</h3>
+            <p class="card__text">WiFi, Strom, Wasser, Heizung - alles inklusive, keine Nachzahlungen.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🌍</div>
+            <h3 class="card__title">Internationale Community</h3>
+            <p class="card__text">120+ Bewohner aus 20+ Ländern - perfekt zum Netzwerken und Freunde finden.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🛠️</div>
+            <h3 class="card__title">Team vor Ort</h3>
+            <p class="card__text">Bei Problemen sind wir schnell da - kein anonymer Vermieter aus der Ferne.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">📍</div>
+            <h3 class="card__title">Beste Lage</h3>
+            <p class="card__text">Mitten in der Altstadt, alles zu Fuß erreichbar - besser geht's nicht.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. So geht's Section -->
+    <section class="section--surface" aria-labelledby="steps-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-header__eyebrow">So geht's</span>
+          <h2 id="steps-title" class="section-header__title">In 3 Schritten einziehen</h2>
+          <p class="section-header__description">Einfacher als du denkst - keine Besichtigung nötig.</p>
+        </header>
+
+        <div class="steps reveal">
+          <div class="steps__grid">
+            <div class="step">
+              <div class="step__number" aria-hidden="true">1</div>
+              <h3 class="step__title">Anfragen</h3>
+              <p class="step__text">Schick uns deine Anfrage mit Wunschzimmer und Einzugsdatum.</p>
+            </div>
+
+            <div class="step">
+              <div class="step__number" aria-hidden="true">2</div>
+              <h3 class="step__title">Vertrag unterschreiben</h3>
+              <p class="step__text">Wir schicken dir den Vertrag digital - unterschreibe bequem von überall.</p>
+            </div>
+
+            <div class="step">
+              <div class="step__number" aria-hidden="true">3</div>
+              <h3 class="step__title">Einziehen</h3>
+              <p class="step__text">Am Einzugstag bekommst du deinen Schlüssel und kannst direkt loslegen.</p>
+            </div>
+          </div>
+
+          <p class="steps__highlight">Keine Besichtigung nötig - spart Zeit und Nerven!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Keine Besichtigung Section -->
+    <section aria-labelledby="no-viewing-title">
+      <div class="container">
+        <div class="no-viewing__content reveal">
+          <h2 id="no-viewing-title">Warum keine Besichtigung?</h2>
+          <p>Bei über 100 Zimmern wäre es nicht möglich, jedem Interessenten eine Besichtigung anzubieten. Stattdessen bieten wir dir bessere Alternativen.</p>
+        </div>
+
+        <div class="grid grid--3 reveal">
+          <article class="card">
+            <div class="card__icon card__icon--large" aria-hidden="true">🔄</div>
+            <h3 class="card__title">360° Virtuelle Touren</h3>
+            <p class="card__text">Erkunde die WGs interaktiv von deinem Gerät aus - jederzeit und überall.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon card__icon--large" aria-hidden="true">📸</div>
+            <h3 class="card__title">Fotos & Grundrisse</h3>
+            <p class="card__text">Detaillierte Bilder und maßstabsgetreue Grundrisse aller Zimmer.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon card__icon--large" aria-hidden="true">📹</div>
+            <h3 class="card__title">Video-Call</h3>
+            <p class="card__text">Persönliches Gespräch mit unserem Team inklusive Live-Rundgang.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. 360° Touren Section -->
+    <section id="tours" class="section--surface" aria-labelledby="tours-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-header__eyebrow">Virtuelle Touren</span>
+          <h2 id="tours-title" class="section-header__title">360° Rundgänge</h2>
+          <p class="section-header__description">Erkunde unsere WGs bequem von zu Hause aus.</p>
+        </header>
+
+        <div class="grid grid--4 reveal">
+          <article class="card tour-card">
+            <div class="tour-card__preview" aria-hidden="true">🏠</div>
+            <h3 class="tour-card__title">Grasstraße 11 Altbau</h3>
+            <a href="#" class="btn btn--secondary btn--full">Tour starten</a>
+          </article>
+
+          <article class="card tour-card">
+            <div class="tour-card__preview" aria-hidden="true">🏢</div>
+            <h3 class="tour-card__title">Grasstraße 11 Modern</h3>
+            <a href="#" class="btn btn--secondary btn--full">Tour starten</a>
+          </article>
+
+          <article class="card tour-card">
+            <div class="tour-card__preview" aria-hidden="true">🏠</div>
+            <h3 class="tour-card__title">Grasstraße 15</h3>
+            <a href="#" class="btn btn--secondary btn--full">Tour starten</a>
+          </article>
+
+          <article class="card tour-card">
+            <div class="tour-card__preview" aria-hidden="true">🏢</div>
+            <h3 class="tour-card__title">Grasstraße 21</h3>
+            <a href="#" class="btn btn--secondary btn--full">Tour starten</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Bewertungen Section -->
+    <section id="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-header__eyebrow">Bewertungen</span>
+          <h2 id="reviews-title" class="section-header__title">Was unsere Bewohner sagen</h2>
+          <p class="section-header__description">Echte Erfahrungen von echten Menschen.</p>
+        </header>
+
+        <div class="grid grid--3 reveal">
+          <article class="card testimonial">
+            <p class="testimonial__stars" aria-label="5 von 5 Sternen">★★★★★</p>
+            <blockquote class="testimonial__quote">
+              „Ich habe 2½ Jahre hier gewohnt und kann es nur empfehlen. Das Team ist super hilfsbereit und die Lage ist unschlagbar."
+            </blockquote>
+            <p class="testimonial__author">— E.S., 2½ Jahre Bewohnerin</p>
+          </article>
+
+          <article class="card testimonial">
+            <p class="testimonial__stars" aria-label="5 von 5 Sternen">★★★★★</p>
+            <blockquote class="testimonial__quote">
+              „Die internationale Community ist das Beste! Ich habe hier Freunde aus der ganzen Welt gefunden."
+            </blockquote>
+            <p class="testimonial__author">— Ephraim, 1½ Jahre Bewohner</p>
+          </article>
+
+          <article class="card testimonial">
+            <p class="testimonial__stars" aria-label="5 von 5 Sternen">★★★★★</p>
+            <blockquote class="testimonial__quote">
+              „Als ich aus Kanada kam, war alles schon vorbereitet. Einziehen ohne Besichtigung hat perfekt funktioniert."
+            </blockquote>
+            <p class="testimonial__author">— K.R. aus Kanada, 9 Monate Bewohnerin</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Galerie Section -->
+    <section id="gallery" class="section--surface" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-header__eyebrow">Galerie</span>
+          <h2 id="gallery-title" class="section-header__title">Einblicke in unsere WGs</h2>
+          <p class="section-header__description">So wohnt es sich bei WG Nürnberg.</p>
+        </header>
+
+        <div class="gallery__filters reveal" role="group" aria-label="Galerie-Filter">
+          <button class="gallery__filter gallery__filter--active" data-filter="all" type="button">Alle</button>
+          <button class="gallery__filter" data-filter="gras" type="button">Grasstraße</button>
+          <button class="gallery__filter" data-filter="klara" type="button">Klarastraße</button>
+          <button class="gallery__filter" data-filter="stern" type="button">Sternstraße</button>
+          <button class="gallery__filter" data-filter="zimmer" type="button">Zimmer</button>
+        </div>
+
+        <div class="gallery__grid reveal">
+          <button class="gallery__item" data-category="gras" type="button" aria-label="Bild vergrößern: Küche Grasstraße 11">
+            <img src="assets/img/gras11-1-1024-o_8.jpg" alt="Helle Küche in der WG Grasstraße 11 mit moderner Einrichtung" loading="lazy" width="300" height="300">
+          </button>
+          <button class="gallery__item" data-category="gras" type="button" aria-label="Bild vergrößern: Wohnbereich Grasstraße 11">
+            <img src="assets/img/gras11-1-1024-o_10.jpg" alt="Gemütlicher Wohnbereich mit Sofa in der Grasstraße 11" loading="lazy" width="300" height="300">
+          </button>
+          <button class="gallery__item" data-category="gras" type="button" aria-label="Bild vergrößern: Altbau Grasstraße 11">
+            <img src="assets/img/gras11-1-1024-o_11.jpg" alt="Charmanter Altbau-Flur mit hohen Decken" loading="lazy" width="300" height="300">
+          </button>
+          <button class="gallery__item" data-category="gras" type="button" aria-label="Bild vergrößern: Modern Grasstraße 11">
+            <img src="assets/img/gras11-2-1024-o_8.jpg" alt="Modernes Bad mit Dusche in der Grasstraße 11" loading="lazy" width="300" height="300">
+          </button>
+          <button class="gallery__item" data-category="gras" type="button" aria-label="Bild vergrößern: Grasstraße 15 Küche">
+            <img src="assets/img/gras15-1-1024-o_8.jpg" alt="Geräumige Wohnküche in der Grasstraße 15" loading="lazy" width="300" height="300">
+          </button>
+          <button class="gallery__item" data-category="gras" type="button" aria-label="Bild vergrößern: Grasstraße 15 Gemeinschaftsraum">
+            <img src="assets/img/gras15-1-1024-o_9.jpg" alt="Heller Gemeinschaftsraum mit großem Tisch" loading="lazy" width="300" height="300">
+          </button>
+          <button class="gallery__item" data-category="gras" type="button" aria-label="Bild vergrößern: Grasstraße 21 Außenansicht">
+            <img src="assets/img/gras21-2-1024-o_9.jpg" alt="WG-Gebäude Grasstraße 21 von außen" loading="lazy" width="300" height="300">
+          </button>
+          <button class="gallery__item" data-category="gras" type="button" aria-label="Bild vergrößern: Grasstraße 21 Innenhof">
+            <img src="assets/img/gras21-2-1024-o_10.jpg" alt="Grüner Innenhof mit Sitzgelegenheiten" loading="lazy" width="300" height="300">
+          </button>
+          <button class="gallery__item" data-category="klara" type="button" aria-label="Bild vergrößern: Klarastraße 2">
+            <img src="assets/img/klara2-1024-o_8.jpg" alt="Einladender Eingangsbereich Klarastraße 2" loading="lazy" width="300" height="300">
+          </button>
+          <button class="gallery__item" data-category="klara" type="button" aria-label="Bild vergrößern: Klarastraße 2 Küche">
+            <img src="assets/img/klara2-1024-o_18.jpg" alt="Vollausgestattete Küche in der Klarastraße" loading="lazy" width="300" height="300">
+          </button>
+          <button class="gallery__item" data-category="klara" type="button" aria-label="Bild vergrößern: Klarastraße 3">
+            <img src="assets/img/klara3-1024-o_8.jpg" alt="Stilvolles Treppenhaus Klarastraße 3" loading="lazy" width="300" height="300">
+          </button>
+          <button class="gallery__item" data-category="stern" type="button" aria-label="Bild vergrößern: Sternstraße 1">
+            <img src="assets/img/stern1-1024-o_8.jpg" alt="Moderne Küche in der Sternstraße 1" loading="lazy" width="300" height="300">
+          </button>
+          <button class="gallery__item" data-category="stern" type="button" aria-label="Bild vergrößern: Sternstraße 3">
+            <img src="assets/img/stern3-1024-o_8.jpg" alt="Gemütlicher Aufenthaltsraum Sternstraße 3" loading="lazy" width="300" height="300">
+          </button>
+          <button class="gallery__item" data-category="zimmer" type="button" aria-label="Bild vergrößern: Beispielzimmer Grasstraße 15">
+            <img src="assets/img/zimmer-gras15-1024-o_1.jpg" alt="Helles Zimmer mit Schreibtisch und Bett" loading="lazy" width="300" height="300">
+          </button>
+          <button class="gallery__item" data-category="zimmer" type="button" aria-label="Bild vergrößern: Beispielzimmer Sternstraße 1">
+            <img src="assets/img/zimmer-stern1-1024-o_8.jpg" alt="Geräumiges WG-Zimmer mit großem Fenster" loading="lazy" width="300" height="300">
+          </button>
+          <button class="gallery__item" data-category="zimmer" type="button" aria-label="Bild vergrößern: Grundriss Grasstraße 11">
+            <img src="assets/img/grundriss-gras11.jpg" alt="Grundriss der WG in der Grasstraße 11" loading="lazy" width="300" height="300">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Bildansicht">
+      <button class="lightbox__close" type="button" aria-label="Bildansicht schließen">&times;</button>
+      <img class="lightbox__image" src="" alt="" id="lightbox-image">
+    </div>
+
+    <!-- 11. WG-Typen Section -->
+    <section id="wg-types" aria-labelledby="wg-types-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-header__eyebrow">WG-Typen</span>
+          <h2 id="wg-types-title" class="section-header__title">Für jeden das Richtige</h2>
+          <p class="section-header__description">Verschiedene Zielgruppen, ein Ziel: Ein gutes Zuhause.</p>
+        </header>
+
+        <div class="grid grid--4 reveal">
+          <article class="card wg-type-card">
+            <div class="wg-type-card__emoji" aria-hidden="true">🎓</div>
+            <h3 class="wg-type-card__title">Studenten-WG</h3>
+            <p class="wg-type-card__text">Perfekt für Studierende - nah an der Uni, bezahlbar, mit Gleichgesinnten.</p>
+            <a href="studenten-wg.html" class="btn btn--secondary btn--full">Mehr erfahren</a>
+          </article>
+
+          <article class="card wg-type-card">
+            <div class="wg-type-card__emoji" aria-hidden="true">🩺</div>
+            <h3 class="wg-type-card__title">Mediziner-WG</h3>
+            <p class="wg-type-card__text">Optimal für Klinikpersonal - kurze Wege, ruhige Atmosphäre.</p>
+            <a href="mediziner-wg.html" class="btn btn--secondary btn--full">Mehr erfahren</a>
+          </article>
+
+          <article class="card wg-type-card">
+            <div class="wg-type-card__emoji" aria-hidden="true">♿</div>
+            <h3 class="wg-type-card__title">Inklusive WG</h3>
+            <p class="wg-type-card__text">Barrierefreie Zimmer für Menschen mit besonderen Bedürfnissen.</p>
+            <a href="inklusive-wg.html" class="btn btn--secondary btn--full">Mehr erfahren</a>
+          </article>
+
+          <article class="card wg-type-card">
+            <div class="wg-type-card__emoji" aria-hidden="true">🌿</div>
+            <h3 class="wg-type-card__title">Senioren-WG</h3>
+            <p class="wg-type-card__text">Gemeinschaft im Alter - selbstbestimmt leben mit Unterstützung.</p>
+            <a href="senioren-wg.html" class="btn btn--secondary btn--full">Mehr erfahren</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. Kontakt Section -->
+    <section id="contact" class="section--surface" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-header__eyebrow">Kontakt</span>
+          <h2 id="contact-title" class="section-header__title">Jetzt anfragen</h2>
+          <p class="section-header__description">Wir melden uns innerhalb von 24 Stunden bei dir.</p>
+        </header>
+
+        <div class="contact__grid reveal">
+          <div class="contact__info">
+            <h3>So erreichst du uns</h3>
+            <p class="contact__text">Ob per Formular, E-Mail, Telefon oder WhatsApp - wir sind für dich da.</p>
+
+            <div class="contact__details">
+              <div class="contact__detail">
+                <span class="contact__detail-icon" aria-hidden="true">📍</span>
+                <div class="contact__detail-content">
+                  <strong>Adresse</strong>
+                  Vordere Sterngasse 2a<br>90402 Nürnberg
+                </div>
+              </div>
+
+              <div class="contact__detail">
+                <span class="contact__detail-icon" aria-hidden="true">📧</span>
+                <div class="contact__detail-content">
+                  <strong>E-Mail</strong>
+                  <a href="mailto:info@wg-nuernberg.de">info@wg-nuernberg.de</a>
+                </div>
+              </div>
+
+              <div class="contact__detail">
+                <span class="contact__detail-icon" aria-hidden="true">📱</span>
+                <div class="contact__detail-content">
+                  <strong>WhatsApp</strong>
+                  <a href="https://wa.me/4915123456789" target="_blank" rel="noopener noreferrer">+49 151 23456789</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="card form" action="#" method="post">
+            <div class="form__group">
+              <label for="name" class="form__label form__label--required">Name</label>
+              <input type="text" id="name" name="name" class="form__input" required autocomplete="name">
+            </div>
+
+            <div class="form__group">
+              <label for="email" class="form__label form__label--required">E-Mail</label>
+              <input type="email" id="email" name="email" class="form__input" required autocomplete="email">
+            </div>
+
+            <div class="form__group">
+              <label for="phone" class="form__label">Telefon (optional)</label>
+              <input type="tel" id="phone" name="phone" class="form__input" autocomplete="tel">
+            </div>
+
+            <div class="form__row">
+              <div class="form__group">
+                <label for="move-in" class="form__label form__label--required">Einzugsdatum</label>
+                <input type="date" id="move-in" name="move-in" class="form__input" required>
+              </div>
+
+              <div class="form__group">
+                <label for="duration" class="form__label form__label--required">Mietdauer</label>
+                <select id="duration" name="duration" class="form__select" required>
+                  <option value="">Bitte wählen</option>
+                  <option value="6">6 Monate</option>
+                  <option value="12">12 Monate</option>
+                  <option value="24">24 Monate</option>
+                  <option value="unbefristet">Unbefristet</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label for="message" class="form__label form__label--required">Nachricht</label>
+              <textarea id="message" name="message" class="form__textarea" required placeholder="Erzähl uns etwas über dich und welches Zimmer dich interessiert..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--large btn--full">Anfrage senden</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. FAQ Section -->
+    <section id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-header__eyebrow">FAQ</span>
+          <h2 id="faq-title" class="section-header__title">Häufige Fragen</h2>
+          <p class="section-header__description">Alles, was du wissen musst - auf einen Blick.</p>
+        </header>
+
+        <div class="faq__list reveal">
+          <!-- FAQ 1 - Wichtigste Frage zuerst -->
+          <div class="faq__item faq__item--open">
+            <button class="faq__question" type="button" aria-expanded="true" aria-controls="faq-answer-1">
+              <span>Muss ich besichtigen?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer" id="faq-answer-1">
+              <strong>Nein!</strong> Bei über 100 Zimmern ist das nicht möglich. Stattdessen bieten wir 360° Touren, detaillierte Fotos und Video-Calls an. Das hat sich bewährt - unsere Bewohner sind zufrieden!
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-2">
+              <span>Wie hoch ist die Kaution?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer" id="faq-answer-2">
+              Die Kaution beträgt 800€ und wird bei Auszug zurückgezahlt, sofern keine Schäden vorliegen.
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-3">
+              <span>Was kostet ein Zimmer?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer" id="faq-answer-3">
+              Die Miete liegt zwischen 450€ und 650€ pro Monat - je nach Zimmergröße und Ausstattung. Alle Nebenkosten (WiFi, Strom, Wasser, Heizung) sind inklusive!
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-4">
+              <span>Bekomme ich eine Wohnungsgeberbestätigung?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer" id="faq-answer-4">
+              Ja, selbstverständlich. Du bekommst alle notwendigen Dokumente für die Anmeldung beim Einwohnermeldeamt.
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-5">
+              <span>Brauche ich einen Bürgen?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer" id="faq-answer-5">
+              Nein, ein Bürge ist nicht erforderlich.
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-6">
+              <span>Sind Haustiere erlaubt?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer" id="faq-answer-6">
+              Leider nein. Aus Rücksicht auf alle Bewohner und mögliche Allergien sind keine Haustiere erlaubt.
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-7">
+              <span>Wie lange ist die Mindestmietdauer?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer" id="faq-answer-7">
+              Die Mindestmietdauer beträgt 6 Monate. In Ausnahmefällen sind auch kürzere Zeiträume möglich - sprich uns einfach an.
+            </div>
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-8">
+              <span>Wie viele WGs gibt es?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer" id="faq-answer-8">
+              Wir haben 17 WGs mit 2 bis 17 Bewohnern pro WG. Insgesamt leben über 120 Menschen bei uns.
+            </div>
+          </div>
+
+          <!-- FAQ 9 -->
+          <div class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-9">
+              <span>Welche Dokumente brauche ich?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer" id="faq-answer-9">
+              Du benötigst einen gültigen Ausweis (Personalausweis oder Reisepass) sowie einen Ausbildungs- oder Arbeitsvertrag bzw. eine Immatrikulationsbescheinigung.
+            </div>
+          </div>
+
+          <!-- FAQ 10 -->
+          <div class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-10">
+              <span>Wie groß sind die Zimmer?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer" id="faq-answer-10">
+              Die Zimmer sind zwischen 10 und 50 m² groß. Es gibt auch besondere Zimmer mit Galerie oder Zugang zur Dachterrasse.
+            </div>
+          </div>
+
+          <!-- FAQ 11 -->
+          <div class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-11">
+              <span>Kann ich eigene Möbel mitbringen?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer" id="faq-answer-11">
+              Ja, du kannst eigene Möbel mitbringen. Die Zimmer sind aber bereits möbliert mit Bett, Schreibtisch, Stuhl und Schrank.
+            </div>
+          </div>
+
+          <!-- FAQ 12 -->
+          <div class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-12">
+              <span>Gibt es Waschmaschinen?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer" id="faq-answer-12">
+              Ja, in jeder WG gibt es Waschmaschinen. Die Nutzung läuft über die WeWash App und kostet einen kleinen Betrag pro Waschgang.
+            </div>
+          </div>
+
+          <!-- FAQ 13 -->
+          <div class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-13">
+              <span>Gibt es gemischte WGs? Ist Doppelbelegung möglich?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer" id="faq-answer-13">
+              Die meisten WGs sind gemischt (alle Geschlechter). Doppelbelegung ist in einigen wenigen, größeren Zimmern möglich.
+            </div>
+          </div>
+
+          <!-- FAQ 14 -->
+          <div class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-14">
+              <span>Gibt es eine Bewohner-Community?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer" id="faq-answer-14">
+              Ja! Es gibt einen WhatsApp-Kanal für alle Bewohner, in dem Events geteilt und Fragen beantwortet werden.
+            </div>
+          </div>
+
+          <!-- FAQ 15 -->
+          <div class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-15">
+              <span>Kann ich die WG wechseln?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer" id="faq-answer-15">
+              Ja, ein WG-Wechsel innerhalb unserer Häuser ist möglich, wenn ein passendes Zimmer frei wird.
+            </div>
+          </div>
+
+          <!-- FAQ 16 -->
+          <div class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-16">
+              <span>Ist Untermiete erlaubt?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer" id="faq-answer-16">
+              Ja, Untervermietung ist nach Absprache möglich - zum Beispiel während eines Auslandssemesters.
+            </div>
+          </div>
+
+          <!-- FAQ 17 -->
+          <div class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-17">
+              <span>Wie finde ich schneller ein Zimmer?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer" id="faq-answer-17">
+              Sei flexibel beim Einzugsdatum, schreib eine persönliche Nachricht und reagiere schnell auf unsere Antworten. Die Zimmer sind begehrt!
+            </div>
+          </div>
+
+          <!-- FAQ 18 -->
+          <div class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-18">
+              <span>Was ist alles im Preis enthalten?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer" id="faq-answer-18">
+              Alles! WiFi, Strom, Wasser, Heizung, Müllentsorgung und Hausreinigung sind im monatlichen Preis enthalten. Keine Nachzahlungen!
+            </div>
+          </div>
+
+          <!-- FAQ 19 -->
+          <div class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-19">
+              <span>Wie schnell bekomme ich eine Antwort?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer" id="faq-answer-19">
+              Wir antworten in der Regel innerhalb von 24 Stunden auf deine Anfrage.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="assets/logos/wg-nuernberg-grey-optimized.svg" alt="WG Nürnberg Logo" width="120" height="32">
+          </div>
+          <p class="footer__tagline">Dein Zuhause in der Nürnberger Altstadt. Seit 2002.</p>
+          <div class="footer__social">
+            <a href="https://instagram.com/wgnuernberg" class="footer__social-link" aria-label="WG Nürnberg auf Instagram" target="_blank" rel="noopener noreferrer">📷</a>
+            <a href="https://facebook.com/wgnuernberg" class="footer__social-link" aria-label="WG Nürnberg auf Facebook" target="_blank" rel="noopener noreferrer">📘</a>
+            <a href="https://wa.me/4915123456789" class="footer__social-link" aria-label="WG Nürnberg auf WhatsApp" target="_blank" rel="noopener noreferrer">💬</a>
+          </div>
+        </div>
+
+        <div class="footer__column">
+          <h4>Schnellzugriff</h4>
+          <nav class="footer__links" aria-label="Footer-Navigation">
+            <a href="#rooms" class="footer__link">Freie Zimmer</a>
+            <a href="#benefits" class="footer__link">Vorteile</a>
+            <a href="#tours" class="footer__link">360° Touren</a>
+            <a href="#contact" class="footer__link">Kontakt</a>
+          </nav>
+        </div>
+
+        <div class="footer__column">
+          <h4>WG-Typen</h4>
+          <nav class="footer__links" aria-label="WG-Typen Navigation">
+            <a href="studenten-wg.html" class="footer__link">Studenten-WG</a>
+            <a href="mediziner-wg.html" class="footer__link">Mediziner-WG</a>
+            <a href="inklusive-wg.html" class="footer__link">Inklusive WG</a>
+            <a href="senioren-wg.html" class="footer__link">Senioren-WG</a>
+          </nav>
+        </div>
+
+        <div class="footer__column">
+          <h4>Kontakt</h4>
+          <div class="footer__links">
+            <span class="footer__link">Vordere Sterngasse 2a</span>
+            <span class="footer__link">90402 Nürnberg</span>
+            <a href="mailto:info@wg-nuernberg.de" class="footer__link">info@wg-nuernberg.de</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 WG Nürnberg. Alle Rechte vorbehalten.</p>
+        <div class="footer__legal">
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Theme Toggle
+    (function() {
+      const toggle = document.querySelector('.header__theme-toggle');
+      const html = document.documentElement;
+      const stored = localStorage.getItem('wgn-theme');
+
+      if (stored) {
+        html.setAttribute('data-theme', stored);
+        toggle.querySelector('span').textContent = stored === 'dark' ? '🌙' : '☀️';
+      }
+
+      toggle.addEventListener('click', function() {
+        const current = html.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+        html.setAttribute('data-theme', next);
+        localStorage.setItem('wgn-theme', next);
+        this.querySelector('span').textContent = next === 'dark' ? '🌙' : '☀️';
+      });
+    })();
+
+    // Mobile Navigation
+    (function() {
+      const menuToggle = document.querySelector('.header__menu-toggle');
+      const mobileNav = document.getElementById('mobile-nav');
+      const links = mobileNav.querySelectorAll('a');
+
+      menuToggle.addEventListener('click', function() {
+        const isOpen = mobileNav.classList.toggle('mobile-nav--open');
+        this.setAttribute('aria-expanded', isOpen);
+        mobileNav.setAttribute('aria-hidden', !isOpen);
+      });
+
+      links.forEach(function(link) {
+        link.addEventListener('click', function() {
+          mobileNav.classList.remove('mobile-nav--open');
+          menuToggle.setAttribute('aria-expanded', 'false');
+          mobileNav.setAttribute('aria-hidden', 'true');
+        });
+      });
+    })();
+
+    // Header Scroll Effect
+    (function() {
+      const header = document.querySelector('.header');
+      let ticking = false;
+
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(function() {
+            header.classList.toggle('header--scrolled', window.scrollY > 50);
+            ticking = false;
+          });
+          ticking = true;
+        }
+      });
+    })();
+
+    // Scroll Progress Bar
+    (function() {
+      const progress = document.querySelector('.scroll-progress');
+      let ticking = false;
+
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(function() {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            progress.style.width = scrollPercent + '%';
+            ticking = false;
+          });
+          ticking = true;
+        }
+      });
+    })();
+
+    // Scroll Reveal Animation
+    (function() {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      const reveals = document.querySelectorAll('.reveal');
+
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal--visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+      reveals.forEach(function(el) { observer.observe(el); });
+    })();
+
+    // FAQ Accordion
+    (function() {
+      const faqItems = document.querySelectorAll('.faq__item');
+
+      faqItems.forEach(function(item) {
+        const button = item.querySelector('.faq__question');
+
+        button.addEventListener('click', function() {
+          const isOpen = item.classList.contains('faq__item--open');
+
+          // Close all
+          faqItems.forEach(function(i) {
+            i.classList.remove('faq__item--open');
+            i.querySelector('.faq__question').setAttribute('aria-expanded', 'false');
+          });
+
+          // Open clicked if was closed
+          if (!isOpen) {
+            item.classList.add('faq__item--open');
+            button.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+    })();
+
+    // Gallery Filter
+    (function() {
+      const filters = document.querySelectorAll('.gallery__filter');
+      const items = document.querySelectorAll('.gallery__item');
+
+      filters.forEach(function(filter) {
+        filter.addEventListener('click', function() {
+          const category = this.getAttribute('data-filter');
+
+          // Update active state
+          filters.forEach(function(f) { f.classList.remove('gallery__filter--active'); });
+          this.classList.add('gallery__filter--active');
+
+          // Filter items
+          items.forEach(function(item) {
+            if (category === 'all' || item.getAttribute('data-category') === category) {
+              item.style.display = '';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+    })();
+
+    // Lightbox
+    (function() {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImage = document.getElementById('lightbox-image');
+      const closeBtn = lightbox.querySelector('.lightbox__close');
+      const galleryItems = document.querySelectorAll('.gallery__item');
+
+      galleryItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+          const img = this.querySelector('img');
+          lightboxImage.src = img.src;
+          lightboxImage.alt = img.alt;
+          lightbox.classList.add('lightbox--open');
+          document.body.style.overflow = 'hidden';
+          closeBtn.focus();
+        });
+      });
+
+      function closeLightbox() {
+        lightbox.classList.remove('lightbox--open');
+        document.body.style.overflow = '';
+      }
+
+      closeBtn.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', function(e) {
+        if (e.target === lightbox) closeLightbox();
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && lightbox.classList.contains('lightbox--open')) {
+          closeLightbox();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

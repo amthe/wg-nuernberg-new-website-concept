@@ -5,7 +5,8 @@
 | Version | Link |
 |---------|------|
 | **Übersicht** | [amthe.github.io/wg-nuernberg-new-website-concept](https://amthe.github.io/wg-nuernberg-new-website-concept/) |
-| **V5 (aktuell)** | [Version 5 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v005/) |
+| **V6 (aktuell)** | [Version 6 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v006/) |
+| V5 | [Version 5 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v005/) |
 | V4 | [Version 4 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v004/) |
 | V3 | [Version 3 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v003/) |
 | V2 | [Version 2 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v002/) |
@@ -157,7 +158,8 @@ Siehe auch [CHANGELOG.md](CHANGELOG.md) für Details.
 
 | Version | Datum | Fokus | Änderungen |
 |---------|-------|-------|------------|
-| **v005** | 2026-03-07 | **Design-Perfektion** | Design System strikt umgesetzt, Scroll-Progress-Bar, Senioren mit Sie-Anrede, einheitliche Karten |
+| **v006** | 2026-03-07 | **Performance & Accessibility** | Lighthouse-optimiert, WAVE-konform, Skip Link, ARIA, Lazy Loading, preconnect, rAF |
+| v005 | 2026-03-07 | Design-Perfektion | Design System strikt umgesetzt, Scroll-Progress-Bar, Senioren mit Sie-Anrede, einheitliche Karten |
 | v004 | 2026-03-07 | Konzept-Features | Stock Photo Hero, Freie Zimmer, 360° Touren, Besichtigung optional, Header=Footer |
 | v003 | 2026-03-06 | Foto-Galerie | Echte WG-Fotos, Lightbox, Standort-Karte (SVG) |
 | v002 | 2026-03-06 | Redesign | Neues Farbkonzept (Mint-Grün + Sky-Blue), Dark Mode, alle Unterseiten, Schema.org |
