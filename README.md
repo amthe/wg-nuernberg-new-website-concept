@@ -1,5 +1,15 @@
 # Website Concept: www.wg-nuernberg.de (New)
 
+## 🔗 Live-Vorschau
+
+| Version | Link |
+|---------|------|
+| **Übersicht** | [amthe.github.io/wg-nuernberg-new-website-concept](https://amthe.github.io/wg-nuernberg-new-website-concept/) |
+| **V2 (aktuell)** | [Version 2 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v002/) |
+| V1 | [Version 1 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v001/) |
+
+---
+
 ## Vision
 
 The new website targets **all shared living residents** — not just students, but also nurses, medical staff (medical shared flats), trainees, international professionals, seniors, inclusive shared living, and everyone who wants to live in a shared flat.
