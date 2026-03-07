@@ -249,6 +249,10 @@
     <section class="hero">
       <!-- Parallax Background -->
       <div class="hero__parallax-bg" aria-hidden="true"></div>
+      <!-- v004: Hero Image -->
+      <div class="hero__image" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1920&q=80" alt="" loading="eager">
+      </div>
       <div class="container">
         <div class="hero__content">
           <div class="hero__badge">
@@ -398,10 +402,93 @@
       </div>
     </section>
 
-    <!-- Section Divider: Location to Benefits -->
+    <!-- Section Divider: Location to Available Rooms -->
     <div class="section-divider section-divider--wave" aria-hidden="true">
       <svg viewBox="0 0 1440 60" preserveAspectRatio="none" fill="var(--color-surface)">
         <path d="M0,0 C480,60 960,60 1440,0 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+
+    <!-- v004: Available Rooms Section -->
+    <section class="available-rooms" id="available-rooms">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-header__eyebrow">Freie Zimmer</span>
+          <h2 class="section-header__title">Aktuelle Verfügbarkeit</h2>
+          <p class="section-header__description">
+            Diese Zimmer sind aktuell frei oder werden bald verfügbar. Die Zuordnung zu WG-Typen ist flexibel.
+          </p>
+        </div>
+
+        <div class="rooms-grid" data-stagger-container>
+          <article class="room-card stagger-reveal">
+            <div class="room-card__badge room-card__badge--studenten">Studenten-WG</div>
+            <div class="room-card__content">
+              <h3 class="room-card__title">WG Grasstraße 11 – Zimmer 3</h3>
+              <div class="room-card__details">
+                <span class="room-card__detail">📐 18 m²</span>
+                <span class="room-card__detail">💶 480€ / Monat</span>
+                <span class="room-card__detail">📅 Ab 01.04.2026</span>
+              </div>
+              <p class="room-card__description">Helles Zimmer im Altbau mit hohen Decken. Gemeinschaftsküche und Bad.</p>
+              <a href="#contact" class="btn btn--primary btn--sm">Anfragen</a>
+            </div>
+          </article>
+
+          <article class="room-card stagger-reveal">
+            <div class="room-card__badge room-card__badge--mediziner">Mediziner-WG</div>
+            <div class="room-card__content">
+              <h3 class="room-card__title">WG Grasstraße 15 – Zimmer 7</h3>
+              <div class="room-card__details">
+                <span class="room-card__detail">📐 22 m²</span>
+                <span class="room-card__detail">💶 520€ / Monat</span>
+                <span class="room-card__detail">📅 Ab sofort</span>
+              </div>
+              <p class="room-card__description">Großes Eckzimmer mit zwei Fenstern. Ideal für Nachtschicht-Arbeiter.</p>
+              <a href="#contact" class="btn btn--primary btn--sm">Anfragen</a>
+            </div>
+          </article>
+
+          <article class="room-card stagger-reveal">
+            <div class="room-card__badge room-card__badge--studenten">Studenten-WG</div>
+            <div class="room-card__content">
+              <h3 class="room-card__title">WG Grasstraße 21 – Zimmer 2</h3>
+              <div class="room-card__details">
+                <span class="room-card__detail">📐 15 m²</span>
+                <span class="room-card__detail">💶 450€ / Monat</span>
+                <span class="room-card__detail">📅 Ab 15.04.2026</span>
+              </div>
+              <p class="room-card__description">Gemütliches Zimmer in moderner WG. Perfekt für Semesterstart.</p>
+              <a href="#contact" class="btn btn--primary btn--sm">Anfragen</a>
+            </div>
+          </article>
+
+          <article class="room-card stagger-reveal">
+            <div class="room-card__badge room-card__badge--inklusive">Inklusive WG</div>
+            <div class="room-card__content">
+              <h3 class="room-card__title">WG Grasstraße 11 – Zimmer 12</h3>
+              <div class="room-card__details">
+                <span class="room-card__detail">📐 25 m²</span>
+                <span class="room-card__detail">💶 550€ / Monat</span>
+                <span class="room-card__detail">📅 Ab 01.05.2026</span>
+              </div>
+              <p class="room-card__description">Barrierefreies Zimmer im Erdgeschoss mit direktem Zugang.</p>
+              <a href="#contact" class="btn btn--primary btn--sm">Anfragen</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="rooms-footer animate-on-scroll">
+          <p class="rooms-footer__update">🔄 Aktualisiert täglich um 08:00 Uhr</p>
+          <p class="rooms-footer__note">Die Zuordnung zu WG-Typen ist flexibel – frag uns bei Interesse nach anderen Optionen!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Divider: Available Rooms to Benefits -->
+    <div class="section-divider section-divider--wave section-divider--wave-up" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" fill="var(--color-surface)">
+        <path d="M0,60 C480,0 960,0 1440,60 L1440,0 L0,0 Z"></path>
       </svg>
     </div>
 
@@ -482,24 +569,82 @@
           </div>
 
           <div class="process-step stagger-reveal">
-            <div class="process-step__icon">👀</div>
-            <h3 class="process-step__title">Besichtigen</h3>
-            <p class="process-step__description">Komm vorbei oder mach einen Video-Call. Wir zeigen dir dein potentielles neues Zuhause.</p>
+            <div class="process-step__icon">📝</div>
+            <h3 class="process-step__title">Vertrag unterschreiben</h3>
+            <p class="process-step__description">Digitaler Vertrag, schnell und unkompliziert. Keine Besichtigung nötig – alle Infos findest du online.</p>
           </div>
 
           <div class="process-step stagger-reveal">
             <div class="process-step__icon">🔑</div>
             <h3 class="process-step__title">Einziehen</h3>
-            <p class="process-step__description">Digitaler Vertrag, Schlüsselübergabe – und schon kannst du dich zuhause fühlen.</p>
+            <p class="process-step__description">Schlüsselübergabe und schon kannst du dich zuhause fühlen. Willkommen in der Community!</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section Divider: Process to Testimonials -->
+    <!-- Section Divider: Process to No-Viewing -->
     <div class="section-divider section-divider--wave" aria-hidden="true">
-      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" fill="var(--color-surface)" style="opacity: 0.5;">
-        <path d="M0,0 C360,40 720,40 1080,20 C1260,10 1380,30 1440,0 L1440,60 L0,60 Z"></path>
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" fill="var(--color-surface)">
+        <path d="M0,0 C480,60 960,60 1440,0 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+
+    <!-- v004: No Viewing Required Section -->
+    <section class="no-viewing" id="no-viewing">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-header__eyebrow">Einfach & Unkompliziert</span>
+          <h2 class="section-header__title">Keine Besichtigung nötig!</h2>
+          <p class="section-header__description">
+            Bei uns meldest du dich einfach an und ziehst ein. Das ist der Normalfall für alle.
+          </p>
+        </div>
+
+        <div class="no-viewing__content animate-on-scroll">
+          <div class="no-viewing__main">
+            <div class="no-viewing__icon">🚀</div>
+            <h3>Du brauchst keine Besichtigung – melde dich einfach an!</h3>
+            <p>
+              Anders als bei anderen Vermietern ist eine Besichtigung bei uns <strong>nicht erforderlich</strong>. Du siehst alle Infos online, entscheidest dich und ziehst ein. Das ist der Normalfall – für Studenten, Internationale, Azubis und alle anderen.
+            </p>
+            <a href="#contact" class="btn btn--primary btn--lg">Jetzt anmelden</a>
+          </div>
+
+          <div class="no-viewing__alternatives">
+            <h4>Du willst trotzdem einen Eindruck?</h4>
+            <div class="no-viewing__options">
+              <div class="no-viewing__option">
+                <span class="no-viewing__option-icon">🎥</span>
+                <div>
+                  <strong>360° Virtuelle Touren</strong>
+                  <p>Erkunde unsere WGs online – so als wärst du vor Ort.</p>
+                </div>
+              </div>
+              <div class="no-viewing__option">
+                <span class="no-viewing__option-icon">📸</span>
+                <div>
+                  <strong>Fotos & Grundrisse</strong>
+                  <p>Detaillierte Bilder aller Zimmer und Gemeinschaftsräume.</p>
+                </div>
+              </div>
+              <div class="no-viewing__option">
+                <span class="no-viewing__option-icon">📹</span>
+                <div>
+                  <strong>Video-Call möglich</strong>
+                  <p>Auf Wunsch zeigen wir dir alles per Video.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Divider: No-Viewing to Testimonials -->
+    <div class="section-divider section-divider--wave section-divider--wave-up" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" fill="var(--color-surface)">
+        <path d="M0,60 C480,0 960,0 1440,60 L1440,0 L0,0 Z"></path>
       </svg>
     </div>
 
@@ -566,8 +711,58 @@
       </div>
     </section>
 
-    <!-- Section Divider: Testimonials to Gallery -->
+    <!-- Section Divider: Testimonials to Virtual Tours -->
     <div class="section-divider section-divider--gradient" aria-hidden="true"></div>
+
+    <!-- v004: Virtual Tours Section -->
+    <section class="virtual-tours" id="virtual-tours">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-header__eyebrow">360° Touren</span>
+          <h2 class="section-header__title">Mach eine virtuelle Tour!</h2>
+          <p class="section-header__description">
+            Erkunde unsere WGs online – so als wärst du vor Ort. Keine Besichtigung nötig!
+          </p>
+        </div>
+
+        <div class="tours-grid" data-stagger-container>
+          <a href="#tour-gras11-altbau" class="tour-card stagger-reveal">
+            <div class="tour-card__icon">🏛️</div>
+            <h3 class="tour-card__title">Grasstraße 11 (Altbau)</h3>
+            <p class="tour-card__description">Charakter und Geschichte. Hohe Decken, Stuck, Holzdielen.</p>
+            <span class="tour-card__cta">Tour starten →</span>
+          </a>
+
+          <a href="#tour-gras11-modern" class="tour-card stagger-reveal">
+            <div class="tour-card__icon">✨</div>
+            <h3 class="tour-card__title">Grasstraße 11 (Modern)</h3>
+            <p class="tour-card__description">Frisch renoviert. Moderne Ausstattung, helle Räume.</p>
+            <span class="tour-card__cta">Tour starten →</span>
+          </a>
+
+          <a href="#tour-gras15" class="tour-card stagger-reveal">
+            <div class="tour-card__icon">🏠</div>
+            <h3 class="tour-card__title">Grasstraße 15</h3>
+            <p class="tour-card__description">Gemütlich und zentral. Perfekt für Studenten und Azubis.</p>
+            <span class="tour-card__cta">Tour starten →</span>
+          </a>
+
+          <a href="#tour-gras21" class="tour-card stagger-reveal">
+            <div class="tour-card__icon">🌟</div>
+            <h3 class="tour-card__title">Grasstraße 21</h3>
+            <p class="tour-card__description">Großzügige WG mit Gemeinschaftsbereichen.</p>
+            <span class="tour-card__cta">Tour starten →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Divider: Virtual Tours to Gallery -->
+    <div class="section-divider section-divider--wave section-divider--wave-up" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" fill="var(--color-surface)">
+        <path d="M0,60 C480,0 960,0 1440,60 L1440,0 L0,0 Z"></path>
+      </svg>
+    </div>
 
     <!-- Gallery Section -->
     <section class="gallery" id="gallery">
@@ -843,6 +1038,16 @@
         <div class="faq__list animate-on-scroll">
           <div class="faq-item">
             <button class="faq-item__question" aria-expanded="false">
+              <span>Muss ich besichtigen?</span>
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p><strong>Nein!</strong> Du kannst dich direkt anmelden. Eine Besichtigung ist bei uns nicht erforderlich – das ist der Normalfall. Alle Infos, Fotos und 360°-Touren findest du online. Wenn du trotzdem einen Eindruck möchtest, bieten wir Video-Calls an.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
               <span>Wie hoch ist die Kaution?</span>
               <span class="faq-item__icon">+</span>
             </button>
@@ -927,7 +1132,7 @@
               <span class="faq-item__icon">+</span>
             </button>
             <div class="faq-item__answer">
-              <p>Die Zimmergrößen variieren zwischen 10 und 50 m². Einige Zimmer haben Besonderheiten wie Galerien oder Dachterrassen – frag bei der Besichtigung nach aktuellen Verfügbarkeiten.</p>
+              <p>Die Zimmergrößen variieren zwischen 10 und 50 m². Einige Zimmer haben Besonderheiten wie Galerien oder Dachterrassen – schau dir unsere 360°-Touren an oder frag uns nach aktuellen Verfügbarkeiten.</p>
             </div>
           </div>
 
