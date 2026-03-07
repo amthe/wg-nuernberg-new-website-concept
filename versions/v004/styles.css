@@ -251,27 +251,45 @@ section {
 /* --------------------------------------------------------------------------
    Header & Navigation
    -------------------------------------------------------------------------- */
+/* v004: Header & Footer gleiche dunkle Farbe */
 .header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--color-border-light);
+  background: var(--color-text);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   transition: background var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.header .header__logo {
+  filter: brightness(0) invert(1);
+}
+
+.header .nav__link {
+  color: var(--color-text-muted);
+}
+
+.header .nav__link:hover {
+  color: var(--color-surface);
+}
+
+.header .nav-toggle__line {
+  background: var(--color-surface);
 }
 
 @media (prefers-color-scheme: dark) {
   .header {
-    background: rgba(15, 23, 42, 0.9);
+    background: var(--color-text);
   }
 }
 
 .header.scrolled {
   box-shadow: var(--shadow-md);
+  background: rgba(30, 41, 59, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .header__inner {
@@ -2303,4 +2321,363 @@ a:focus-visible {
   .benefit-card:hover {
     transform: none !important;
   }
+}
+
+/* ==========================================================================
+   v004: New Features
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   v004: Hero Image Background
+   -------------------------------------------------------------------------- */
+.hero__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero__image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.85) 0%, rgba(14, 165, 233, 0.85) 100%);
+  z-index: 1;
+}
+
+.hero__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* --------------------------------------------------------------------------
+   v004: No Viewing Required Section
+   -------------------------------------------------------------------------- */
+.no-viewing {
+  background: var(--color-surface);
+}
+
+.no-viewing__content {
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.no-viewing__main {
+  text-align: center;
+  padding: var(--space-12);
+  background: var(--color-background);
+  border-radius: var(--radius-2xl);
+  margin-bottom: var(--space-8);
+  border: 2px solid var(--color-primary);
+}
+
+.no-viewing__icon {
+  font-size: var(--font-size-6xl);
+  margin-bottom: var(--space-4);
+}
+
+.no-viewing__main h3 {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-4);
+  color: var(--color-primary);
+}
+
+.no-viewing__main p {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-6);
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.no-viewing__alternatives {
+  padding: var(--space-8);
+  background: var(--color-background);
+  border-radius: var(--radius-xl);
+}
+
+.no-viewing__alternatives h4 {
+  text-align: center;
+  margin-bottom: var(--space-6);
+  color: var(--color-text-secondary);
+}
+
+.no-viewing__options {
+  display: grid;
+  gap: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .no-viewing__options {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.no-viewing__option {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-fast);
+}
+
+.no-viewing__option:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.no-viewing__option-icon {
+  font-size: var(--font-size-2xl);
+  flex-shrink: 0;
+}
+
+.no-viewing__option strong {
+  display: block;
+  margin-bottom: var(--space-1);
+  color: var(--color-text);
+}
+
+.no-viewing__option p {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   v004: Available Rooms Section
+   -------------------------------------------------------------------------- */
+.available-rooms {
+  background: var(--color-surface);
+}
+
+.rooms-grid {
+  display: grid;
+  gap: var(--space-6);
+}
+
+@media (min-width: 640px) {
+  .rooms-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .rooms-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.room-card {
+  position: relative;
+  background: var(--color-background);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--color-border-light);
+  transition: all var(--transition-normal);
+}
+
+.room-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary);
+}
+
+.room-card__badge {
+  position: absolute;
+  top: var(--space-3);
+  left: var(--space-3);
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  border-radius: var(--radius-full);
+  color: white;
+}
+
+.room-card__badge--studenten {
+  background: var(--color-primary);
+}
+
+.room-card__badge--mediziner {
+  background: #EF4444;
+}
+
+.room-card__badge--inklusive {
+  background: #8B5CF6;
+}
+
+.room-card__badge--senioren {
+  background: #F59E0B;
+}
+
+.room-card__content {
+  padding: var(--space-6);
+  padding-top: var(--space-10);
+}
+
+.room-card__title {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-3);
+  line-height: var(--line-height-snug);
+}
+
+.room-card__details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.room-card__detail {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  background: var(--color-surface);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+}
+
+.room-card__description {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-4);
+  line-height: var(--line-height-relaxed);
+}
+
+.btn--sm {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--font-size-sm);
+}
+
+.rooms-footer {
+  text-align: center;
+  margin-top: var(--space-8);
+  padding: var(--space-6);
+  background: var(--color-background);
+  border-radius: var(--radius-xl);
+}
+
+.rooms-footer__update {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  margin-bottom: var(--space-2);
+}
+
+.rooms-footer__note {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+/* --------------------------------------------------------------------------
+   v004: Virtual Tours Section
+   -------------------------------------------------------------------------- */
+.virtual-tours {
+  background: var(--gradient-hero);
+}
+
+.tours-grid {
+  display: grid;
+  gap: var(--space-6);
+}
+
+@media (min-width: 640px) {
+  .tours-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .tours-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.tour-card {
+  display: block;
+  padding: var(--space-6);
+  background: var(--color-background);
+  border-radius: var(--radius-xl);
+  text-align: center;
+  border: 1px solid var(--color-border-light);
+  transition: all var(--transition-normal);
+  text-decoration: none;
+}
+
+.tour-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary);
+}
+
+.tour-card__icon {
+  font-size: var(--font-size-4xl);
+  margin-bottom: var(--space-4);
+}
+
+.tour-card__title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-2);
+  color: var(--color-text);
+}
+
+.tour-card__description {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-4);
+}
+
+.tour-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+}
+
+/* --------------------------------------------------------------------------
+   v004: Subpage Room Cards
+   -------------------------------------------------------------------------- */
+.subpage-rooms {
+  margin-top: var(--space-12);
+  padding: var(--space-8);
+  background: var(--color-surface);
+  border-radius: var(--radius-2xl);
+}
+
+.subpage-rooms h3 {
+  margin-bottom: var(--space-4);
+}
+
+.subpage-rooms__intro {
+  margin-bottom: var(--space-6);
+}
+
+.subpage-rooms__grid {
+  display: grid;
+  gap: var(--space-4);
+}
+
+@media (min-width: 640px) {
+  .subpage-rooms__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.subpage-rooms__update {
+  margin-top: var(--space-6);
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-semibold);
 }

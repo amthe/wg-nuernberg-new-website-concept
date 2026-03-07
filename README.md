@@ -5,7 +5,8 @@
 | Version | Link |
 |---------|------|
 | **Übersicht** | [amthe.github.io/wg-nuernberg-new-website-concept](https://amthe.github.io/wg-nuernberg-new-website-concept/) |
-| **V3 (aktuell)** | [Version 3 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v003/) |
+| **V4 (aktuell)** | [Version 4 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v004/) |
+| V3 | [Version 3 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v003/) |
 | V2 | [Version 2 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v002/) |
 | V1 | [Version 1 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v001/) |
 
@@ -154,8 +155,10 @@ Siehe auch [CHANGELOG.md](CHANGELOG.md) für Details.
 
 | Version | Datum | Fokus | Änderungen |
 |---------|-------|-------|------------|
+| **v004** | 2026-03-07 | **Konzept-Features** | Stock Photo Hero, Freie Zimmer, 360° Touren, Besichtigung optional, Header=Footer |
+| v003 | 2026-03-06 | Foto-Galerie | Echte WG-Fotos, Lightbox, Standort-Karte (SVG) |
 | v002 | 2026-03-06 | Redesign | Neues Farbkonzept (Mint-Grün + Sky-Blue), Dark Mode, alle Unterseiten, Schema.org |
-| v001 | 2026-03-06 | Erster Prototyp | Grundstruktur, alle Seiten — Farben waren falsch (→ v002) |
+| v001 | 2026-03-06 | Erster Prototyp | Grundstruktur — Farben waren falsch (schwarz/orange → v002) |
 
 ## Notes
 
