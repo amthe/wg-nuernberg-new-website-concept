@@ -1,78 +1,71 @@
-# CHANGES — WG Nürnberg Website v002
+# CHANGES — WG Nürnberg Website v003
 
-**Version:** v002
+**Version:** v003
 **Date:** 2026-03-07
-**Status:** Enhanced with scroll storytelling & micro-interactions
+**Status:** Real Photo Gallery with Lightbox & WG Map
 
 ---
 
 ## Overview
 
-v002 builds on v001 by adding scroll-driven storytelling and micro-interactions to make the website feel alive and modern. All enhancements respect `prefers-reduced-motion` for accessibility.
+v003 replaces all placeholder images with real photos from the WGs and adds a full-featured lightbox/modal viewer with filter functionality. The location section now displays the actual WG map SVG.
 
 ---
 
-## v002 Enhancements
+## v003 Enhancements
 
-### Scroll Progress Indicator
-- Thin gradient bar at the very top of viewport
-- Uses primary gradient (green to blue)
-- Grows from 0% to 100% width as user scrolls
-- Fixed position, always visible
+### Real Photo Gallery
+- **12 real photos** from various WG locations:
+  - Grasstraße 11 (WG 1 & WG 2)
+  - Grasstraße 15 (WG 1)
+  - Grasstraße 21 (WG 2)
+  - Klarastraße 2 & 3
+  - Sternstraße 1 & 3
+  - Individual room photos
+  - 3D floor plan (Grundriss)
+- Featured large image layout for the first photo
+- Responsive masonry-style grid
+- Lazy loading on all images for performance
+- Descriptive alt text on each image
 
-### Animated Stat Counters
-- Stats in About section (20+ years, 120+ residents, 20+ nations, 17 WGs)
-- Count up from 0 when scrolling into view
-- Uses IntersectionObserver (triggers once)
-- Smooth ease-out-cubic animation over 2 seconds
-- Falls back to static numbers with reduced motion
+### Gallery Filter System
+- Filter buttons above the gallery: Alle, Grasstraße, Klarastraße, Sternstraße, Zimmer
+- Data attribute based filtering (`data-category`)
+- Active filter state with gradient styling
+- Instant show/hide filtering
+- Accessible with `aria-pressed` states
+- Floor plan visible in all filters
 
-### Staggered Reveal Animations
-- Benefit cards, process steps, and testimonials
-- Fade in with 100ms stagger delay between each item
-- Uses IntersectionObserver (not scroll events)
-- Smooth fadeInUp keyframe animation
-- Disabled with reduced motion preference
+### Lightbox/Modal Viewer
+- Pure CSS + JS implementation (no external libraries)
+- Full-screen overlay with dark backdrop (95% opacity)
+- **Navigation features:**
+  - Previous/Next arrow buttons with SVG icons
+  - Keyboard navigation (Left/Right arrows, Escape to close)
+  - Touch swipe support for mobile (swipe left/right)
+- **Close methods:**
+  - X button in top-right corner
+  - Click on backdrop
+  - Escape key
+- Caption bar showing the WG location name
+- Image counter (e.g., "3 / 12")
+- Smooth fade-in/out animations with scale transform
+- Respects `prefers-reduced-motion` setting
+- Focus trapped in lightbox for accessibility
 
-### Button Micro-interactions
-- CTA buttons scale up on hover (`transform: scale(1.03)`)
-- Press-down effect on `:active` (`scale(0.97)`)
-- Enhanced box-shadow lift on hover
-- Smooth 150ms transitions
-- Applied to all button variants (primary, secondary, outline, WhatsApp)
+### Location Map
+- Replaced map placeholder emoji with actual `wg-map.svg`
+- Responsive sizing with `object-fit: contain`
+- Proper padding for visual breathing room
+- Accessible alt text
 
-### Section Transition Effects
-- Wave SVG dividers between major sections
-- Creates visual flow instead of hard boundaries
-- Gradient dividers for some section transitions
-- Subtle, non-intrusive design
+### About Section Image
+- Replaced placeholder emoji with real photo (`gras15-1-1024-o_13.jpg`)
+- Maintains aspect ratio with `object-fit: cover`
+- Shows a welcoming common area from Grasstraße 15
 
-### Gallery Hover Zoom
-- Gallery placeholders zoom on hover (`scale(1.08)` inner, `scale(1.02)` outer)
-- `overflow: hidden` on container for clean effect
-- Smooth 400ms transition
-- Added shadow lift on hover
-
-### Parallax Hero Effect
-- Hero background scrolls at different speed (0.3x multiplier)
-- Uses `transform: translateY()` (NOT `background-attachment: fixed`)
-- Decorative elements have staggered parallax speeds
-- Mobile-friendly (works on all devices)
-- Disabled for users preferring reduced motion
-
-### Focus State Improvements
-- All interactive elements have visible `:focus-visible` states
-- Primary color (green) outline with 2px offset
-- Applied to buttons, links, nav items, form fields, FAQ buttons, gallery items
-- Default focus ring hidden when not using keyboard navigation
-
-### Reduced Motion Support
-- All animations respect `prefers-reduced-motion: reduce`
-- CSS: Disables all animations/transitions
-- JS: Checks media query and skips animations
-- Elements shown immediately without motion
-- Parallax disabled
-- Smooth scroll falls back to instant scroll
+### Gallery Description Update
+- Changed from "bald mit noch mehr Bildern" to "Echte Einblicke in unsere WGs in der Nürnberger Altstadt"
 
 ---
 
@@ -80,56 +73,103 @@ v002 builds on v001 by adding scroll-driven storytelling and micro-interactions 
 
 | File | Changes |
 |------|---------|
-| `index.html` | Added scroll progress div, parallax bg wrapper, data attributes for counters, stagger-reveal classes, section dividers, enhanced JavaScript |
-| `styles.css` | Version bump, scroll progress styles, button micro-interactions, focus-visible states, stagger animations, section dividers, gallery zoom, parallax styles, reduced-motion media queries |
-| `CHANGES.md` | Updated with v002 info |
+| `index.html` | Replaced gallery section with real photos, added filter buttons, added lightbox HTML, replaced map placeholder with SVG, replaced about section placeholder with photo, added gallery/lightbox JavaScript |
+| `styles.css` | Added filter button styles, enhanced gallery grid styles, added lightbox modal styles, added map SVG styles, added about image styles |
+| `CHANGES.md` | Updated with v003 info |
 
 ---
 
 ## Technical Notes
 
-### CSS Additions (~150 lines)
-- `.scroll-progress` - Fixed progress bar
-- Button hover/active enhancements
-- `:focus-visible` states for accessibility
-- `.stagger-reveal` animation classes
-- `.section-divider` wave/gradient styles
-- Gallery zoom effects
-- Parallax positioning
-- `@media (prefers-reduced-motion: reduce)` overrides
+### CSS Additions (~200 lines)
+- `.gallery__filters` - Filter button container (flexbox, centered)
+- `.gallery__filter` - Individual filter buttons with active state
+- `.gallery__item` - Enhanced with overlay, label, hover effects
+- `.gallery__item--featured` - Large featured item spanning 2x2 grid
+- `.gallery__item--floorplan` - Special styling for floor plan
+- `.gallery__overlay` - Gradient overlay with location label
+- `.gallery__label` - Location name styling
+- `.gallery__image` - Full-cover image with zoom on hover
+- `.lightbox` - Full lightbox modal container
+- `.lightbox__backdrop` - Dark backdrop with click-to-close
+- `.lightbox__content` - Centered content container
+- `.lightbox__image` - Responsive image with animations
+- `.lightbox__nav` - Navigation button styling (prev/next)
+- `.lightbox__close` - Close button with hover effect
+- `.lightbox__caption` - Caption bar styling
+- `.lightbox__counter` - Image counter styling
+- `.location__map-svg` - SVG map responsive styling
+- `.about__image-photo` - About section photo styling
+- Reduced motion support for lightbox animations
 
-### JavaScript Additions (~100 lines)
-- `prefersReducedMotion` check
-- `updateScrollProgress()` function
-- `updateParallax()` function with requestAnimationFrame
-- `animateCounter()` with easing
-- IntersectionObserver for stats
-- IntersectionObserver for staggered reveals
+### JavaScript Additions (~120 lines)
+- **Gallery Filter:**
+  - Click handlers for filter buttons
+  - `data-filter` attribute matching
+  - Active state management with `aria-pressed`
+  - Show/hide items with `.hidden` class
+- **Lightbox:**
+  - `openLightbox()` - Opens modal with image
+  - `closeLightbox()` - Closes with animation
+  - `prevImage()` / `nextImage()` - Navigation
+  - `updateLightboxImage()` - Updates displayed image
+  - `getVisibleItems()` - Gets filtered items
+  - Keyboard event listener (Escape, Arrow keys)
+  - Touch swipe detection (touchstart/touchend)
+  - Focus management for accessibility
+  - Respects `prefersReducedMotion` for animations
 
-### Performance Considerations
-- Uses `will-change: transform` for parallax elements
-- IntersectionObserver instead of scroll event listeners where possible
-- Throttled scroll updates via browser's native handling
-- CSS transitions instead of JS animations where feasible
-- Elements unobserved after animation completes
+### Images Used
+All images from `assets/img/` directory:
+- `gras11-1-1024-o_8.jpg` - Featured large image
+- `gras11-2-1024-o_8.jpg`
+- `gras15-1-1024-o_8.jpg`
+- `gras15-1-1024-o_13.jpg` - About section
+- `gras21-2-1024-o_9.jpg`
+- `klara2-1024-o_8.jpg`
+- `klara3-1024-o_8.jpg`
+- `stern1-1024-o_8.jpg`
+- `stern1-1024-o_25.jpg`
+- `stern3-1024-o_8.jpg`
+- `zimmer-gras15-1024-o_3.jpg`
+- `zimmer-stern1-1024-o_8.jpg`
+- `grundriss-gras11.jpg` - Floor plan
+- `wg-map.svg` - Location map
 
 ---
 
 ## Browser Compatibility
 - All features work in modern browsers (Chrome, Firefox, Safari, Edge)
-- IntersectionObserver supported in all modern browsers
-- `:focus-visible` supported in all modern browsers
-- Graceful fallback for older browsers (elements visible, no animations)
+- Touch events supported on all mobile devices
 - Works with file:// protocol (no server required)
+- Graceful degradation (images visible without JS)
+- Lazy loading supported in all modern browsers
 
 ---
 
 ## Accessibility
+- All gallery items have `tabindex="0"` and `role="button"`
+- Descriptive `aria-label` on each gallery item
+- Filter buttons use `aria-pressed` for state
+- Lightbox uses `role="dialog"` and `aria-modal="true"`
+- Navigation buttons have `aria-label` descriptions
+- Focus managed when lightbox opens/closes
+- Keyboard navigation (Arrow keys, Escape)
 - All animations respect `prefers-reduced-motion`
-- Focus states visible for keyboard navigation
-- Section dividers use `aria-hidden="true"`
-- Scroll progress indicator uses `aria-hidden="true"`
-- All existing accessibility features from v001 preserved
+- Proper alt text on all images
+
+---
+
+## v002 Features (Preserved)
+All v002 features remain intact:
+- Scroll progress indicator
+- Parallax hero effect
+- Animated stat counters
+- Staggered reveal animations
+- Button micro-interactions
+- Section dividers (wave/gradient)
+- Focus state improvements
+- Reduced motion support
 
 ---
 
@@ -148,11 +188,10 @@ All v001 features remain intact:
 
 ---
 
-## Next Steps (v003+)
-1. Apply v002 enhancements to all subpages
-2. Add real photos and video content
-3. Implement Google Maps embed
-4. Set up form submission (backend/email)
-5. Add loading skeleton states
-6. Consider adding scroll-triggered video backgrounds
-7. Add page transition animations
+## Next Steps (v004+)
+1. Apply v003 photo gallery to all subpages
+2. Add more photos for each WG type subpage
+3. Set up form submission (backend/email)
+4. Add loading skeleton states for images
+5. Consider video tours integration
+6. Add interactive elements to the map SVG
