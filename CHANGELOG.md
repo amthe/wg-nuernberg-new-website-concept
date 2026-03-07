@@ -4,6 +4,30 @@ Komplette Historie aller Versionen. Neueste zuerst.
 
 ---
 
+## v005 — 2026-03-07
+
+### Fokus
+Design-Perfektion & Polishing — kompletter Neubau mit strikter Design-System-Konformität
+
+### Änderungen
+- **Komplett von Grund auf neu gebaut** — kein Code aus v004 übernommen
+- **Design System strikt umgesetzt:** Alle CSS-Tokens als Custom Properties (Spacing 8px-Grid, Typografie-Skala, Farben)
+- **Einheitlicher Karten-Stil** überall (Vorteile, Zimmer, Touren, Testimonials, WG-Typen)
+- **Scroll-Progress-Bar:** Gradient (Primary → Accent), 3px, fixed top
+- **Scroll-Reveal Animationen:** translateY(20px) + opacity, respektiert prefers-reduced-motion
+- **Senioren-Seite mit 'Sie'-Anrede:** Formeller, wärmerer Ton ("Sie behalten Ihre Unabhängigkeit", "Wir nehmen uns Zeit für Sie")
+- **Galerie Lightbox:** Keyboard Navigation (Escape, Arrow), Touch Swipe, Filter-Buttons
+- **19 FAQ-Fragen** als Accordion (erste: "Muss ich besichtigen? → Nein!")
+- **Schema.org JSON-LD:** LocalBusiness, FAQPage, AggregateRating
+- **Open Graph + Twitter Cards** auf allen Seiten
+- **Accessibility:** Skip Link, ARIA Labels, Semantic HTML, Focus Styles, aria-expanded
+- **Performance:** Lazy Loading, fetchpriority="high" für Hero, Passive Event Listeners, Preconnect
+
+### Warum
+Alle Konzept-Features waren seit v004 drin. v005 fokussiert auf die perfekte Umsetzung des Design Systems — konsistente Abstände, einheitliche Komponenten, sauberer visueller Rhythmus.
+
+---
+
 ## v004 — 2026-03-07
 
 ### Fokus
