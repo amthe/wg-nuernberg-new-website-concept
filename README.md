@@ -50,6 +50,8 @@ Modern, Gen-Z friendly. No 2015-Bootstrap feel. Aligned with what young people e
 - Inspiration: Spring, new beginnings, "this is where your new life starts"
 
 - **Bold Typography** — large, confident fonts
+- **Aus einem Guss** — EIN Design-System, EIN Karten-Stil, konsistente Abstände. Siehe `design-system.md` und `page-blueprint.md`
+- **Dark Mode Toggle** — ☀️/🌙 im Header, manuell umschaltbar
 - **Scroll Storytelling** — the page tells a story as you scroll
 - **Hero-Bild:** Ein passendes **Stock Photo mit fröhlichen Studenten** — zeigt das WG-Lebensgefühl, Gemeinschaft, gute Laune. Bis eigene Fotos/Videos produziert werden, ist ein hochwertiges Stock Photo die beste Option.
 - **Real photos/videos** where available — authenticity beats glossy. Stock photos as bridge until own content is produced.
