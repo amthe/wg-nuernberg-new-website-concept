@@ -45,7 +45,6 @@
           <li><a href="index.html#faq" class="nav__link">FAQ</a></li>
         </ul>
         <a href="index.html#contact" class="btn btn--primary">Anfragen</a>
-        <button class="theme-toggle" id="theme-toggle" aria-label="Dark Mode umschalten" title="Light/Dark Mode"><span class="theme-toggle__icon theme-toggle__icon--light">☀️</span><span class="theme-toggle__icon theme-toggle__icon--dark">🌙</span></button>
       </nav>
 
       <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-nav">
@@ -365,21 +364,6 @@
     window.addEventListener('scroll', updateScrollProgress);
     window.addEventListener('resize', updateScrollProgress);
     updateScrollProgress();
-
-    // v004: Theme Toggle
-    const themeToggle = document.getElementById("theme-toggle");
-    const root = document.documentElement;
-    const savedTheme = localStorage.getItem("wgn-theme");
-    if (savedTheme) root.setAttribute("data-theme", savedTheme);
-    if (themeToggle) {
-      themeToggle.addEventListener("click", () => {
-        const currentTheme = root.getAttribute("data-theme");
-        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        const newTheme = (currentTheme === "dark" || (!currentTheme && prefersDark)) ? "light" : "dark";
-        root.setAttribute("data-theme", newTheme);
-        localStorage.setItem("wgn-theme", newTheme);
-      });
-    }
   </script>
 </body>
 </html>

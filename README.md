@@ -49,7 +49,6 @@ Modern, Gen-Z friendly. No 2015-Bootstrap feel. Aligned with what young people e
 - Specific hex values to be defined in prototype, direction: something between mint/teal + sky/ocean
 - Inspiration: Spring, new beginnings, "this is where your new life starts"
 
-- **Dark Mode Toggle** — manueller Schalter im Header (Light/Dark Mode). Standardmäßig folgt die Seite den System-Einstellungen, aber der User kann manuell umschalten. Wichtig für Testing und Barrierefreiheit.
 - **Bold Typography** — large, confident fonts
 - **Scroll Storytelling** — the page tells a story as you scroll
 - **Hero-Bild:** Ein passendes **Stock Photo mit fröhlichen Studenten** — zeigt das WG-Lebensgefühl, Gemeinschaft, gute Laune. Bis eigene Fotos/Videos produziert werden, ist ein hochwertiges Stock Photo die beste Option.
