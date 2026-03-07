@@ -147,6 +147,15 @@ Each section has its own tailored content — but all share the same foundation 
 
 _(noch keine — wird nach dem ersten Quality Check befüllt)_
 
+## Versionshistorie
+
+Siehe auch [CHANGELOG.md](CHANGELOG.md) für Details.
+
+| Version | Datum | Fokus | Änderungen |
+|---------|-------|-------|------------|
+| v002 | 2026-03-06 | Redesign | Neues Farbkonzept (Mint-Grün + Sky-Blue), Dark Mode, alle Unterseiten, Schema.org |
+| v001 | 2026-03-06 | Erster Prototyp | Grundstruktur, alle Seiten — Farben waren falsch (→ v002) |
+
 ## Notes
 
 - Legacy website lives in `data/wg-nuernberg-legacy/`
