@@ -5,7 +5,9 @@
 | Version | Link |
 |---------|------|
 | **Übersicht** | [amthe.github.io/wg-nuernberg-new-website-concept](https://amthe.github.io/wg-nuernberg-new-website-concept/) |
-| **V9 (aktuell)** | [Version 9 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v009/) |
+| **V11 (aktuell)** | [Version 11 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v011/) |
+| V10 | [Version 10 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v010/) |
+| V9 | [Version 9 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v009/) |
 | V8 | [Version 8 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v008/) |
 | V7 | [Version 7 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v007/) |
 | V6 | [Version 6 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v006/) |
@@ -164,6 +166,8 @@ Siehe auch [CHANGELOG.md](CHANGELOG.md) für Details.
 
 | Version | Datum | Fokus | Änderungen |
 |---------|-------|-------|------------|
+| **v011** | 2026-03-08 | **Video Hero Placeholder & Mobile-First Polish** | Video-Play-Button im Hero, Parallax entfernt (Blueprint-konform), SVG Dark Mode Toggle, helles einladendes Hero-Design |
+| v010 | 2026-03-08 | Scroll Storytelling | IntersectionObserver Animations, Animated Stat Counters, Parallax Hero, Scroll Progress |
 | **v009** | 2026-03-08 | **SVG Dark Mode Toggle + Micro-Interactions** | SVG Icons statt Emoji (☀️/🌙), Smooth Theme Transitions, Button Click-Feedback, Card Glow-Effekt, helles Hero-Bild |
 | v008 | 2026-03-08 | Cookie Consent & Form Validation | DSGVO-konformer Cookie Banner, Client-Validierung, Back-to-Top, Print-Stylesheet |
 | v007 | 2026-03-07 | Schema.org & SEO | Structured Data (LocalBusiness, FAQPage, Reviews, Offers, Breadcrumbs), Open Graph, Twitter Cards, Favicon, robots.txt, sitemap.xml, Canonical URLs, Meta Descriptions |
