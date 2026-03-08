@@ -39,6 +39,8 @@ The new website targets **all shared living residents** — not just students, b
 
 **Prozess:** Diese Tools werden nach **jeder neuen Version** ausgeführt. Ergebnisse werden in der jeweiligen `CHANGES.md` dokumentiert. Gefundene Probleme werden unten im Abschnitt "Known Issues / Next Fixes" eingetragen und in der nächsten Version behoben.
 
+**Konzept-Archivierung:** Zu jeder Version werden die zugehörigen Konzept-Dateien (README.md, design-system.md, page-blueprint.md etc.) als Snapshot im Versionsordner abgespeichert (`versions/vXXX/concept/`). So ist immer nachvollziehbar, welches Konzept zu welcher Version gehört.
+
 ### Design Direction
 
 Modern, Gen-Z friendly. No 2015-Bootstrap feel. Aligned with what young people expect today.
@@ -58,7 +60,8 @@ Modern, Gen-Z friendly. No 2015-Bootstrap feel. Aligned with what young people e
 - **Aus einem Guss** — EIN Design-System, EIN Karten-Stil, konsistente Abstände. Siehe `design-system.md` und `page-blueprint.md`
 - **Dark Mode Toggle** — im Header, manuell umschaltbar. **Minimal und elegant** — ein kleiner, schöner Toggle-Switch oder Icon-Button. Keine Emojis (kein ☀️/🌙), sondern ein sauberes SVG-Icon (z.B. dünne Sonne/Mond-Linie oder ein einfacher Kreis-Switch). Smooth CSS-Transition beim Umschalten. Weniger ist mehr.
 - **Scroll Storytelling** — the page tells a story as you scroll
-- **Hero-Bild:** Ein passendes **Stock Photo mit fröhlichen Studenten** — zeigt das WG-Lebensgefühl, Gemeinschaft, gute Laune. Bis eigene Fotos/Videos produziert werden, ist ein hochwertiges Stock Photo die beste Option. **KEIN dunkles Hero-Bild** — das Hero muss hell, einladend und freundlich wirken. Helle Farben, viel Licht, positive Stimmung. Kein dunkler Hintergrund, kein moody Filter.
+- **Hero = Video (erstes was man sieht!)** — Das allererste Element auf der Seite ist ein **Video**. Fullwidth, prominent, sofort sichtbar. Das Video wird später produziert und hinzugefügt — bis dahin ein ansprechender Video-Placeholder (z.B. helles Standbild mit Play-Button-Overlay oder eine dezente Animation). **KEIN dunkles Hero** — hell, einladend, freundlich. Helle Farben, viel Licht, positive Stimmung.
+- **Stock Photo als Fallback:** Bis das Video fertig ist, ein hochwertiges Stock Photo mit fröhlichen Studenten — zeigt WG-Lebensgefühl, Gemeinschaft, gute Laune. **Kein dunkler Hintergrund, kein moody Filter.**
 - **Real photos/videos** where available — authenticity beats glossy. Stock photos as bridge until own content is produced.
 - **Micro-Interactions** — subtle animations, hover effects, feedback
 - **Lots of whitespace** — clean, not cluttered
