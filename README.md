@@ -5,7 +5,9 @@
 | Version | Link |
 |---------|------|
 | **Übersicht** | [amthe.github.io/wg-nuernberg-new-website-concept](https://amthe.github.io/wg-nuernberg-new-website-concept/) |
-| **V7 (aktuell)** | [Version 7 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v007/) |
+| **V9 (aktuell)** | [Version 9 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v009/) |
+| V8 | [Version 8 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v008/) |
+| V7 | [Version 7 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v007/) |
 | V6 | [Version 6 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v006/) |
 | V5 | [Version 5 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v005/) |
 | V4 | [Version 4 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v004/) |
@@ -54,9 +56,9 @@ Modern, Gen-Z friendly. No 2015-Bootstrap feel. Aligned with what young people e
 
 - **Bold Typography** — large, confident fonts
 - **Aus einem Guss** — EIN Design-System, EIN Karten-Stil, konsistente Abstände. Siehe `design-system.md` und `page-blueprint.md`
-- **Dark Mode Toggle** — ☀️/🌙 im Header, manuell umschaltbar
+- **Dark Mode Toggle** — im Header, manuell umschaltbar. **Minimal und elegant** — ein kleiner, schöner Toggle-Switch oder Icon-Button. Keine Emojis (kein ☀️/🌙), sondern ein sauberes SVG-Icon (z.B. dünne Sonne/Mond-Linie oder ein einfacher Kreis-Switch). Smooth CSS-Transition beim Umschalten. Weniger ist mehr.
 - **Scroll Storytelling** — the page tells a story as you scroll
-- **Hero-Bild:** Ein passendes **Stock Photo mit fröhlichen Studenten** — zeigt das WG-Lebensgefühl, Gemeinschaft, gute Laune. Bis eigene Fotos/Videos produziert werden, ist ein hochwertiges Stock Photo die beste Option.
+- **Hero-Bild:** Ein passendes **Stock Photo mit fröhlichen Studenten** — zeigt das WG-Lebensgefühl, Gemeinschaft, gute Laune. Bis eigene Fotos/Videos produziert werden, ist ein hochwertiges Stock Photo die beste Option. **KEIN dunkles Hero-Bild** — das Hero muss hell, einladend und freundlich wirken. Helle Farben, viel Licht, positive Stimmung. Kein dunkler Hintergrund, kein moody Filter.
 - **Real photos/videos** where available — authenticity beats glossy. Stock photos as bridge until own content is produced.
 - **Micro-Interactions** — subtle animations, hover effects, feedback
 - **Lots of whitespace** — clean, not cluttered
@@ -159,7 +161,9 @@ Siehe auch [CHANGELOG.md](CHANGELOG.md) für Details.
 
 | Version | Datum | Fokus | Änderungen |
 |---------|-------|-------|------------|
-| **v007** | 2026-03-07 | **Schema.org & SEO** | Structured Data (LocalBusiness, FAQPage, Reviews, Offers, Breadcrumbs), Open Graph, Twitter Cards, Favicon, robots.txt, sitemap.xml, Canonical URLs, Meta Descriptions |
+| **v009** | 2026-03-08 | **SVG Dark Mode Toggle + Micro-Interactions** | SVG Icons statt Emoji (☀️/🌙), Smooth Theme Transitions, Button Click-Feedback, Card Glow-Effekt, helles Hero-Bild |
+| v008 | 2026-03-08 | Cookie Consent & Form Validation | DSGVO-konformer Cookie Banner, Client-Validierung, Back-to-Top, Print-Stylesheet |
+| v007 | 2026-03-07 | Schema.org & SEO | Structured Data (LocalBusiness, FAQPage, Reviews, Offers, Breadcrumbs), Open Graph, Twitter Cards, Favicon, robots.txt, sitemap.xml, Canonical URLs, Meta Descriptions |
 | v006 | 2026-03-07 | Performance & Accessibility | Lighthouse-optimiert, WAVE-konform, Skip Link, ARIA, Lazy Loading, preconnect, rAF |
 | v005 | 2026-03-07 | Design-Perfektion | Design System strikt umgesetzt, Scroll-Progress-Bar, Senioren mit Sie-Anrede, einheitliche Karten |
 | v004 | 2026-03-07 | Konzept-Features | Stock Photo Hero, Freie Zimmer, 360° Touren, Besichtigung optional, Header=Footer |

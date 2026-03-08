@@ -1,0 +1,16 @@
+# WG Nürnberg - robots.txt
+# https://wg-nuernberg.de
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://wg-nuernberg.de/sitemap.xml
+
+# Crawl-delay (optional, be polite to crawlers)
+Crawl-delay: 1
+
+# Block common non-content paths (if they existed)
+# Disallow: /admin/
+# Disallow: /api/
+# Disallow: /tmp/
