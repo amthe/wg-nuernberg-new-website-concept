@@ -176,6 +176,8 @@ Siehe auch [CHANGELOG.md](CHANGELOG.md) für Details.
 | v007 | 2026-03-07 | Schema.org & SEO | Structured Data (LocalBusiness, FAQPage, Reviews, Offers, Breadcrumbs), Open Graph, Twitter Cards, Favicon, robots.txt, sitemap.xml, Canonical URLs, Meta Descriptions |
 | v006 | 2026-03-07 | Performance & Accessibility | Lighthouse-optimiert, WAVE-konform, Skip Link, ARIA, Lazy Loading, preconnect, rAF |
 | v005 | 2026-03-07 | Design-Perfektion | Design System strikt umgesetzt, Scroll-Progress-Bar, Senioren mit Sie-Anrede, einheitliche Karten |
+| | | **⬆️ Ab hier: From-Scratch-Ansatz** | **Jede Version wird komplett neu aus dem Konzept (README + Design System + Blueprint) gebaut. Zwischen v004→v005 ging dabei Inhalt verloren, der in v001–v004 inkrementell aufgebaut wurde.** |
+| | | **⬇️ Bis hier: Inkrementell** | **v001–v004 wurden aufeinander aufgebaut — Features wurden Schritt für Schritt ergänzt.** |
 | v004 | 2026-03-07 | Konzept-Features | Stock Photo Hero, Freie Zimmer, 360° Touren, Besichtigung optional, Header=Footer |
 | v003 | 2026-03-06 | Foto-Galerie | Echte WG-Fotos, Lightbox, Standort-Karte (SVG) |
 | v002 | 2026-03-06 | Redesign | Neues Farbkonzept (Mint-Grün + Sky-Blue), Dark Mode, alle Unterseiten, Schema.org |
