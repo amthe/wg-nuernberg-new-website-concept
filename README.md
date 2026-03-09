@@ -5,7 +5,9 @@
 | Version | Link |
 |---------|------|
 | **Übersicht** | [amthe.github.io/wg-nuernberg-new-website-concept](https://amthe.github.io/wg-nuernberg-new-website-concept/) |
-| **V14 (aktuell)** | [Version 14 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v014/) |
+| **V16 (aktuell)** | [Version 16 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v016/) |
+| V15 | [Version 15 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v015/) |
+| V14 | [Version 14 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v014/) |
 | V13 | [Version 13 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v013/) |
 | V12 | [Version 12 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v012/) |
 | V11 | [Version 11 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v011/) |
@@ -144,6 +146,18 @@ Each section has its own tailored content — but all share the same foundation 
 
 ### Assets
 
+#### 🆕 Eigene Fotos (Dev-Originale)
+
+Quellmaterial in `data/wg-nuernberg/dev/Bilder-2/` — 32 JPGs in Originalauflösung.
+
+| Kategorie | Anzahl | Pfad |
+|-----------|--------|------|
+| Zimmer unmöbliert | 15 | `Bilder-2/Zimmer unmöbliert/` (raum_01–16, foto_08/10/13) |
+| Zimmer möbliert | 6 | `Bilder-2/Zimmer möbliert/` (zimmer_01–06) |
+| Allgemeinflächen | 11 | `Bilder-2/Allgemeinflächen/` (foto_01–09, neu_01/02/04) |
+
+**Status:** Dev-Originale (unkomprimiert). Website-Versionen verwenden vorerst die Dev-Bilder direkt. Web-optimierte Versionen (Resize, WebP/AVIF, Thumbnails) stehen noch aus — siehe Open TODOs.
+
 - **Hero Stock Photo:** Ein hochwertiges Stock Photo mit fröhlichen Studenten in WG-Atmosphäre (Unsplash, Pexels o.ä.)
 - **WG-Bilder aus Legacy-Website** (`data/wg-nuernberg-legacy/assets/img/`):
   - `wg-gras-11-1/` bis `wg-gras-11-3/` — Grasstraße 11 (3 WGs)
@@ -157,6 +171,11 @@ Each section has its own tailored content — but all share the same foundation 
   - `wg-gras-11-1/`, `wg-gras-11-2/`, `wg-gras-15-1/`, `wg-gras-21-2/`
 - **Video:** Placeholder — real video still to be produced
 
+## Open TODOs
+
+- [ ] **Komprimierte Bilder:** Ben liefert die web-optimierten Versionen der 32 Fotos separat. Bis dahin: Dev-Originale aus `data/wg-nuernberg/dev/Bilder-2/` verwenden.
+- [ ] **Web-Bilder in Website einbauen:** Sobald die komprimierten Versionen geliefert sind, in die nächste Website-Version einbauen (Galerie, Zimmer-Karten, Allgemeinflächen).
+
 ## Known Issues / Next Fixes
 
 *Hier werden Probleme aus den Quality Checks eingetragen, die in der nächsten Version behoben werden sollen.*
@@ -169,7 +188,9 @@ Siehe auch [CHANGELOG.md](CHANGELOG.md) für Details.
 
 | Version | Datum | Fokus | Änderungen |
 |---------|-------|-------|------------|
-| **v014** | 2026-03-09 | **"Unsere WGs" Dropdown-Nav im Header** | Desktop Hover-Dropdown + Mobile aufklappbar im Hamburger, farbcodierte Badges, von Grund auf neu gebaut |
+| **v016** | 2026-03-09 | **Blueprint-treue Galerie-Filter + Schema.org SEO** | Galerie-Filter korrigiert (Alle/Grasstraße/Klarastraße/Sternstraße/Zimmer), vollständiges Schema.org Structured Data, SVG Dark Mode Toggle, alle 32 echten Fotos |
+| v015 | 2026-03-09 | Echte WG-Fotos | 32 echte Fotos aus Bilder-2 in Hero, Galerie, Zimmer-Karten, Tour-Karten |
+| v014 | 2026-03-09 | "Unsere WGs" Dropdown-Nav im Header | Desktop Hover-Dropdown + Mobile aufklappbar im Hamburger, farbcodierte Badges, von Grund auf neu gebaut |
 | v013 | 2026-03-09 | Full Rebuild + Dark Mode Polish | Komplett neu gebaut, aber WG-Dropdown fehlte noch |
 | **v012** | 2026-03-08 | **Cookie Consent Details + Performance + Responsive Polish** | DSGVO-konformer Cookie Consent mit Details-Dialog (3 Kategorien), Performance-Optimierungen (IntersectionObserver, rAF, lazy loading), Tablet-Responsive-Polish |
 | v011 | 2026-03-08 | Video Hero Placeholder & Mobile-First Polish | Video-Play-Button im Hero, Parallax entfernt (Blueprint-konform), SVG Dark Mode Toggle, helles einladendes Hero-Design |
