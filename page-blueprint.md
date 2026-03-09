@@ -8,9 +8,12 @@ Exakte Struktur jeder Seite. Claude Code folgt diesem Blueprint.
 
 ### Sektion 1: Header (fixed)
 - Logo links (grey SVG)
-- Nav: Über uns, Lage, Freie Zimmer, Vorteile, FAQ
+- Nav: Über uns, **Unsere WGs** (Dropdown), Freie Zimmer, Lage, FAQ
+- **Dropdown "Unsere WGs":** Studenten-WG, Mediziner-WG, Inklusive-WG, Senioren-WG (Links zu den jeweiligen Unterseiten)
+  - Desktop: Hover-Dropdown, sauber animiert (fade + slide-down)
+  - Mobil: Im Hamburger-Menü als aufklappbare Gruppe
 - CTA-Button: "Anfragen"
-- Dark Mode Toggle: ☀️/🌙
+- Dark Mode Toggle (Icon, kein Emoji)
 - Mobil: Hamburger
 
 ### Sektion 2: Hero
@@ -105,7 +108,7 @@ Exakte Struktur jeder Seite. Claude Code folgt diesem Blueprint.
 Alle Unterseiten folgen dem gleichen Template:
 
 ### Header
-- Gleich wie Hauptseite (Nav zurück zur Startseite)
+- Gleich wie Hauptseite (gleiche Nav mit "Unsere WGs"-Dropdown — User kann jederzeit zwischen WG-Typen wechseln)
 
 ### Hero (kleiner als Hauptseite)
 - Emoji + H1 + Description

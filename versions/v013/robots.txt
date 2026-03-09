@@ -1,0 +1,27 @@
+# robots.txt for WG Nürnberg
+# https://wg-nuernberg.de
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://wg-nuernberg.de/sitemap.xml
+
+# Crawl-delay (optional, be polite to our server)
+Crawl-delay: 1
+
+# Block common bot traps and admin paths
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
+Disallow: /*.json$
+Disallow: /api/
+
+# Allow all CSS and JS for proper rendering
+Allow: /*.css$
+Allow: /*.js$
+Allow: /assets/
+
+# Block duplicate content
+Disallow: /*?*
+Allow: /*?utm_*

@@ -5,7 +5,9 @@
 | Version | Link |
 |---------|------|
 | **Übersicht** | [amthe.github.io/wg-nuernberg-new-website-concept](https://amthe.github.io/wg-nuernberg-new-website-concept/) |
-| **V11 (aktuell)** | [Version 11 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v011/) |
+| **V13 (aktuell)** | [Version 13 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v013/) |
+| V12 | [Version 12 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v012/) |
+| V11 | [Version 11 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v011/) |
 | V10 | [Version 10 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v010/) |
 | V9 | [Version 9 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v009/) |
 | V8 | [Version 8 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v008/) |
@@ -158,7 +160,7 @@ Each section has its own tailored content — but all share the same foundation 
 
 *Hier werden Probleme aus den Quality Checks eingetragen, die in der nächsten Version behoben werden sollen.*
 
-_(noch keine — wird nach dem ersten Quality Check befüllt)_
+- **Navigation: "Unsere WGs"-Dropdown im Header** — Die WG-Typ-Unterseiten (Studenten, Mediziner, Inklusive, Senioren) müssen über ein Dropdown-Menü im Header erreichbar sein. Aktuell sind die Links nur in Sektion 12 ganz unten. Wer über eine Kampagne auf einer Unterseite landet und dann zur Hauptseite wechselt, findet die Unterseite nicht mehr. → Blueprint wurde aktualisiert.
 
 ## Versionshistorie
 
@@ -166,7 +168,8 @@ Siehe auch [CHANGELOG.md](CHANGELOG.md) für Details.
 
 | Version | Datum | Fokus | Änderungen |
 |---------|-------|-------|------------|
-| **v011** | 2026-03-08 | **Video Hero Placeholder & Mobile-First Polish** | Video-Play-Button im Hero, Parallax entfernt (Blueprint-konform), SVG Dark Mode Toggle, helles einladendes Hero-Design |
+| **v012** | 2026-03-08 | **Cookie Consent Details + Performance + Responsive Polish** | DSGVO-konformer Cookie Consent mit Details-Dialog (3 Kategorien), Performance-Optimierungen (IntersectionObserver, rAF, lazy loading), Tablet-Responsive-Polish |
+| v011 | 2026-03-08 | Video Hero Placeholder & Mobile-First Polish | Video-Play-Button im Hero, Parallax entfernt (Blueprint-konform), SVG Dark Mode Toggle, helles einladendes Hero-Design |
 | v010 | 2026-03-08 | Scroll Storytelling | IntersectionObserver Animations, Animated Stat Counters, Parallax Hero, Scroll Progress |
 | **v009** | 2026-03-08 | **SVG Dark Mode Toggle + Micro-Interactions** | SVG Icons statt Emoji (☀️/🌙), Smooth Theme Transitions, Button Click-Feedback, Card Glow-Effekt, helles Hero-Bild |
 | v008 | 2026-03-08 | Cookie Consent & Form Validation | DSGVO-konformer Cookie Banner, Client-Validierung, Back-to-Top, Print-Stylesheet |

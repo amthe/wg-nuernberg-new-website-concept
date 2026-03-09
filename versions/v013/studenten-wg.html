@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Studenten-WG in Nürnberg — Günstiges WG-Zimmer für Studenten ab 450€ all-in. Zentrale Lage, möbliert, keine Provision. Perfekt für TH Nürnberg und FAU.">
+    <meta name="keywords" content="Studenten WG Nürnberg, WG-Zimmer Student, günstig wohnen Nürnberg, TH Nürnberg, FAU Erlangen-Nürnberg">
+    <meta name="author" content="WG Nürnberg">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Studenten-WG Nürnberg — Günstiges WG-Zimmer für Studenten">
+    <meta property="og:description" content="Ab 450€ all-in, keine Provision, zentrale Lage. Perfekt für Studenten der TH Nürnberg und FAU.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200&h=630&fit=crop">
+    <meta property="og:url" content="https://wg-nuernberg.de/studenten-wg.html">
+    <meta property="og:type" content="website">
+
+    <title>Studenten-WG Nürnberg — Günstiges WG-Zimmer für Studenten</title>
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://wg-nuernberg.de/studenten-wg.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Schema.org BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Startseite",
+                "item": "https://wg-nuernberg.de"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Studenten-WG",
+                "item": "https://wg-nuernberg.de/studenten-wg.html"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org Offer -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Offer",
+        "name": "Studenten-WG Zimmer",
+        "description": "Möbliertes WG-Zimmer für Studenten in der Nürnberger Altstadt",
+        "price": "450",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+            "@type": "LocalBusiness",
+            "name": "WG Nürnberg"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip Link -->
+    <a href="#main" class="skip-link">Zum Hauptinhalt springen</a>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container header__inner">
+            <a href="index.html" class="header__logo" aria-label="WG Nürnberg Startseite">
+                <img src="assets/logos/wg-nuernberg-grey-optimized.svg" alt="WG Nürnberg Logo" width="135" height="31">
+            </a>
+
+            <nav class="header__nav" role="navigation" aria-label="Hauptnavigation">
+                <ul class="header__nav-list">
+                    <li><a href="index.html#ueber-uns" class="header__nav-link">Über uns</a></li>
+                    <li><a href="index.html#lage" class="header__nav-link">Lage</a></li>
+                    <li><a href="index.html#freie-zimmer" class="header__nav-link">Freie Zimmer</a></li>
+                    <li><a href="index.html#vorteile" class="header__nav-link">Vorteile</a></li>
+                    <li><a href="index.html#faq" class="header__nav-link">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <a href="index.html#kontakt" class="btn btn--primary btn--sm">Anfragen</a>
+
+                <button class="theme-toggle" id="theme-toggle" aria-label="Farbschema wechseln" type="button">
+                    <svg class="theme-toggle__icon theme-toggle__icon--sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                    <svg class="theme-toggle__icon theme-toggle__icon--moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+
+                <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false" type="button">
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav" id="mobile-nav" role="navigation" aria-label="Mobile Navigation">
+            <ul class="mobile-nav__list">
+                <li><a href="index.html#ueber-uns" class="mobile-nav__link">Über uns</a></li>
+                <li><a href="index.html#lage" class="mobile-nav__link">Lage</a></li>
+                <li><a href="index.html#freie-zimmer" class="mobile-nav__link">Freie Zimmer</a></li>
+                <li><a href="index.html#vorteile" class="mobile-nav__link">Vorteile</a></li>
+                <li><a href="index.html#faq" class="mobile-nav__link">FAQ</a></li>
+                <li><a href="index.html#kontakt" class="mobile-nav__link mobile-nav__link--cta">Jetzt anfragen</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb__list">
+                    <li><a href="index.html">Startseite</a></li>
+                    <li aria-current="page">Studenten-WG</li>
+                </ol>
+            </div>
+        </nav>
+
+        <!-- Hero -->
+        <section class="subpage-hero section--surface" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="subpage-hero__content reveal">
+                    <span class="subpage-hero__icon">🎓</span>
+                    <h1 id="hero-title" class="subpage-hero__title">Studenten-WG</h1>
+                    <p class="subpage-hero__desc">Dein günstiges WG-Zimmer in der Nürnberger Altstadt. Perfekt für Studenten der TH Nürnberg, FAU und aller anderen Hochschulen.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content -->
+        <section class="section" aria-labelledby="content-title">
+            <div class="container">
+                <div class="subpage-grid">
+                    <div class="subpage-content reveal">
+                        <h2 id="content-title" class="sr-only">Über die Studenten-WG</h2>
+
+                        <p class="lead">Du suchst ein bezahlbares Zimmer in zentraler Lage? Unsere Studenten-WGs bieten dir genau das — und noch viel mehr.</p>
+
+                        <p>Als Student weißt du, wie schwer es ist, in Nürnberg eine bezahlbare Unterkunft zu finden. Bei WG Nürnberg haben wir uns genau darauf spezialisiert: WG-Zimmer, die perfekt auf die Bedürfnisse von Studenten zugeschnitten sind.</p>
+
+                        <p>Unsere Zimmer sind vollständig möbliert — du brauchst nur noch deine Bücher und deinen Laptop. Die Miete ist eine echte Flatrate: Internet, Strom, Heizung, Wasser, alles inklusive. Keine Überraschungen bei der Nebenkostenabrechnung.</p>
+
+                        <p>Und das Beste: Du kannst ohne Besichtigung einziehen. Schau dir unsere 360°-Touren an, und wenn dir gefällt, was du siehst, schicken wir dir den Mietvertrag. So einfach ist das.</p>
+
+                        <h3>Warum unsere Studenten-WG?</h3>
+
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <span class="feature-item__icon">💰</span>
+                                <div class="feature-item__content">
+                                    <h4>Ab 450€ all-in</h4>
+                                    <p>Echte Flatrate — Internet, Strom, Heizung, Wasser, GEZ, alles inklusive.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <span class="feature-item__icon">🚲</span>
+                                <div class="feature-item__content">
+                                    <h4>Zentrale Lage</h4>
+                                    <p>TH Nürnberg in 10 Minuten mit dem Fahrrad, FAU Campus in 12 Minuten.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <span class="feature-item__icon">🛋️</span>
+                                <div class="feature-item__content">
+                                    <h4>Möbliert</h4>
+                                    <p>Bett, Schrank, Schreibtisch, Stuhl — du brauchst nur noch deine Sachen.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <span class="feature-item__icon">🌐</span>
+                                <div class="feature-item__content">
+                                    <h4>Schnelles WLAN</h4>
+                                    <p>100 Mbit/s in allen WGs — perfekt für Streaming und Online-Vorlesungen.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <span class="feature-item__icon">🌍</span>
+                                <div class="feature-item__content">
+                                    <h4>Internationale Community</h4>
+                                    <p>Lerne Kommilitonen aus über 20 Ländern kennen. Studentenleben pur.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <span class="feature-item__icon">📝</span>
+                                <div class="feature-item__content">
+                                    <h4>Flexible Mietdauer</h4>
+                                    <p>Ab 3 Monaten möglich — perfekt für Auslandssemester oder Praktika.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside class="subpage-sidebar reveal">
+                        <div class="sidebar-card">
+                            <h3 class="sidebar-card__title">Freie Zimmer</h3>
+                            <p class="sidebar-card__subtitle">Für Studenten</p>
+
+                            <div class="sidebar-room">
+                                <span class="badge badge--studenten">Verfügbar</span>
+                                <h4>Grasstraße 11 — Zimmer 3</h4>
+                                <ul class="sidebar-room__details">
+                                    <li>📐 16 m²</li>
+                                    <li>💰 520€ / Monat</li>
+                                    <li>📅 Ab 01.04.2026</li>
+                                </ul>
+                            </div>
+
+                            <a href="index.html#kontakt" class="btn btn--primary btn--full">Jetzt anfragen</a>
+                        </div>
+
+                        <div class="sidebar-card sidebar-card--light">
+                            <h3 class="sidebar-card__title">Noch Fragen?</h3>
+                            <p>Schreib uns per WhatsApp oder ruf uns an.</p>
+                            <a href="https://wa.me/4991112345678" class="btn btn--whatsapp btn--full" target="_blank" rel="noopener">
+                                WhatsApp
+                            </a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section section--surface" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-section reveal">
+                    <h2 id="cta-title" class="cta-section__title">Bereit für dein neues Zuhause?</h2>
+                    <p class="cta-section__desc">Schau dir unsere 360°-Touren an oder schreib uns direkt. Keine Besichtigung nötig — du kannst sofort einziehen.</p>
+                    <div class="cta-section__actions">
+                        <a href="index.html#touren" class="btn btn--primary btn--lg">360° Touren ansehen</a>
+                        <a href="index.html#kontakt" class="btn btn--secondary btn--lg">Kontakt aufnehmen</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo" aria-label="WG Nürnberg Startseite">
+                        <img src="assets/logos/wg-nuernberg-grey-optimized.svg" alt="WG Nürnberg Logo" width="135" height="31">
+                    </a>
+                    <p class="footer-brand__desc">Dein WG-Zimmer in der Lorenzer Altstadt. Seit 2002.</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/wgnuernberg" class="footer-social__link" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com/wgnuernberg" class="footer-social__link" target="_blank" rel="noopener" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-nav">
+                    <h4 class="footer-nav__title">Navigation</h4>
+                    <ul class="footer-nav__list">
+                        <li><a href="index.html#ueber-uns">Über uns</a></li>
+                        <li><a href="index.html#lage">Lage</a></li>
+                        <li><a href="index.html#freie-zimmer">Freie Zimmer</a></li>
+                        <li><a href="index.html#vorteile">Vorteile</a></li>
+                        <li><a href="index.html#galerie">Galerie</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                        <li><a href="index.html#kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav">
+                    <h4 class="footer-nav__title">WG-Typen</h4>
+                    <ul class="footer-nav__list">
+                        <li><a href="studenten-wg.html" aria-current="page">Studenten-WG</a></li>
+                        <li><a href="mediziner-wg.html">Mediziner-WG</a></li>
+                        <li><a href="inklusive-wg.html">Inklusive WG</a></li>
+                        <li><a href="senioren-wg.html">Senioren-WG</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4 class="footer-nav__title">Kontakt</h4>
+                    <address class="footer-contact__address">
+                        WG Nürnberg<br>
+                        Grasstraße 11<br>
+                        90402 Nürnberg
+                    </address>
+                    <p><a href="tel:+4991112345678">+49 911 12345678</a></p>
+                    <p><a href="mailto:info@wg-nuernberg.de">info@wg-nuernberg.de</a></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2002–2026 WG Nürnberg. Alle Rechte vorbehalten.</p>
+                <nav class="footer-legal">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
