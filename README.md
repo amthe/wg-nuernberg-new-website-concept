@@ -5,7 +5,8 @@
 | Version | Link |
 |---------|------|
 | **Übersicht** | [amthe.github.io/wg-nuernberg-new-website-concept](https://amthe.github.io/wg-nuernberg-new-website-concept/) |
-| **V18 (aktuell)** | [Version 18 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v018/) |
+| **V19 (aktuell)** | [Version 19 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v019/) |
+| V18 | [Version 18 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v018/) |
 | V17 | [Version 17 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v017/) |
 | V16 | [Version 16 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v016/) |
 | V15 | [Version 15 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v015/) |
@@ -192,6 +193,9 @@ Siehe auch [CHANGELOG.md](CHANGELOG.md) für Details.
 
 | Version | Datum | Fokus | Änderungen |
 |---------|-------|-------|------------|
+| **v019** | 2026-03-11 | **View Transitions + Progressive Images + Accessibility** | View Transitions API, Progressive Image Loading (blur-up), Button Ripple Effects, Skip-Link, ARIA, focus-visible, Keyboard-Nav Galerie+Lightbox, Touch-Swipe Lightbox, alle 32 echten Fotos |
+| v018 | 2026-03-10 | Premium Visual Polish | Layered Box-Shadows, Dark Mode Border-Glow, Typographic Refinement, Smooth Cubic-Bezier Transitions |
+| v017 | 2026-03-10 | Accessibility + Performance + Micro-Interactions | — |
 | **v016** | 2026-03-09 | **Blueprint-treue Galerie-Filter + Schema.org SEO** | Galerie-Filter korrigiert (Alle/Grasstraße/Klarastraße/Sternstraße/Zimmer), vollständiges Schema.org Structured Data, SVG Dark Mode Toggle, alle 32 echten Fotos |
 | v015 | 2026-03-09 | Echte WG-Fotos | 32 echte Fotos aus Bilder-2 in Hero, Galerie, Zimmer-Karten, Tour-Karten |
 | v014 | 2026-03-09 | "Unsere WGs" Dropdown-Nav im Header | Desktop Hover-Dropdown + Mobile aufklappbar im Hamburger, farbcodierte Badges, von Grund auf neu gebaut |
