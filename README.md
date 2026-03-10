@@ -28,7 +28,7 @@
 
 ## Vision
 
-The new website targets **all shared living residents** — not just students, but also nurses, medical staff (medical shared flats), trainees, international professionals, seniors, inclusive shared living, and everyone who wants to live in a shared flat.
+The new website targets **all shared living residents** — not just students, but also nurses, medical staff (medical shared flats), trainees, young professionals, inclusive shared living, and everyone who wants to live in a shared flat.
 
 ### Tech
 
@@ -106,11 +106,12 @@ References/Inspiration: Apps like Airbnb, WG-Gesucht (but better), The Student H
 - Concept: diverse people living together
 - What makes this offering special
 
-#### Senior Shared Flat
-- Community instead of loneliness
-- Quieter flats, central location (short walks, everything on foot)
-- Accessible options (where available)
-- **Different tone of voice:** Seniors need to be addressed differently than students — more formal (Sie instead of Du), reassuring, emphasizing safety, reliability, and personal contact. Less hip, more warm and trustworthy.
+#### Young Professionals Shared Flat
+- Für Berufseinsteiger, junge Fachkräfte, Trainees, Werkstudenten
+- Vorteile: Kurze Mietverträge möglich, voll möbliert, sofort einziehbar
+- Networking mit Gleichgesinnten — nicht allein in einer neuen Stadt
+- Zentrale Lage: kurze Wege zur Arbeit, Restaurants, Nachtleben
+- Tonalität: professionell aber locker, Du-Anrede
 
 Each section has its own tailored content — but all share the same foundation (prices, contact, FAQ).
 
@@ -130,7 +131,7 @@ Each section has its own tailored content — but all share the same foundation 
    - Eigener, prominenter Bereich auf der Website für **aktuell verfügbare Zimmer**
    - Inspiration: Legacy-Website zeigt freie Zimmer mit Belegungsstatus (siehe `data/wg-nuernberg-legacy/`, `_data/freie-zimmer.yml`, `zimmer.json`)
    - **Aktualisierung:** Einmal täglich um 08:00 Uhr
-   - **Anzeige pro Kategorie:** Freie Zimmer werden in jeder Zielgruppen-Sektion angezeigt (Studenten, Mediziner, Senioren, Inklusive WG)
+   - **Anzeige pro Kategorie:** Freie Zimmer werden in jeder Zielgruppen-Sektion angezeigt (Studenten, Mediziner, Young Professionals, Inklusive WG)
    - **Flexible Zuordnung:** Jedes Zimmer kann jeder Kategorie zugeordnet werden. Ein Mitarbeiter entscheidet, in welchem Bereich ein Zimmer erscheint. Ein Senioren-WG-Zimmer kann zum Studenten-WG-Zimmer werden und umgekehrt — alle Zimmer sind flexibel umwidmbar.
    - Technisch: CMS/Backend muss es einem Mitarbeiter ermöglichen, Zimmer einfach zwischen Kategorien zu verschieben
 
@@ -168,7 +169,8 @@ Quellmaterial in `data/wg-nuernberg/dev/Bilder-2/` — 32 JPGs in Originalauflö
   - `wg-klara-2/` bis `wg-klara-4/` — Klarastraße (3 WGs)
   - `wg-stern-1/` bis `wg-stern-4/` — Sternstraße (4 WGs)
   - Jeder Ordner enthält: `allgemein/` (Fotos) + `grundrisse/` (Grundrisse 2D/3D)
-  - `wg-map.svg` — Karte der WG-Standorte
+  - `wg-map.svg` — Karte der WG-Standorte (Legacy)
+- **Karten-Placeholder:** Bis eine echte interaktive Karte oder eigene SVG-Karte erstellt wird, einen Placeholder verwenden (z.B. via `https://placehold.co/800x400?text=Standortkarte` oder ähnlich). Kein broken Image, kein leerer Bereich.
 - **360° Touren** (`data/wg-nuernberg-legacy/assets/tour/`):
   - `wg-gras-11-1/`, `wg-gras-11-2/`, `wg-gras-15-1/`, `wg-gras-21-2/`
 - **Video:** Placeholder — real video still to be produced

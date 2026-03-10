@@ -9,7 +9,7 @@ Exakte Struktur jeder Seite. Claude Code folgt diesem Blueprint.
 ### Sektion 1: Header (fixed)
 - Logo links (grey SVG)
 - Nav: Über uns, **Unsere WGs** (Dropdown), Freie Zimmer, Lage, FAQ
-- **Dropdown "Unsere WGs":** Studenten-WG, Mediziner-WG, Inklusive-WG, Senioren-WG (Links zu den jeweiligen Unterseiten)
+- **Dropdown "Unsere WGs":** Studenten-WG, Mediziner-WG, Inklusive-WG, Young Professionals-WG (Links zu den jeweiligen Unterseiten)
   - Desktop: Hover-Dropdown, sauber animiert (fade + slide-down)
   - Mobil: Im Hamburger-Menü als aufklappbare Gruppe
 - CTA-Button: "Anfragen"
@@ -34,7 +34,8 @@ Exakte Struktur jeder Seite. Claude Code folgt diesem Blueprint.
 
 ### Sektion 4: Lage
 - Section Header
-- 2-Spalten: Karte (SVG) links, Entfernungen rechts
+- 2-Spalten: Karte links, Entfernungen rechts
+- **Karte:** Placeholder-Bild verwenden bis eine echte Karte erstellt wird (z.B. `https://placehold.co/800x400/F8FAFC/64748B?text=Standortkarte+%E2%80%93+coming+soon`). Kein broken Image, kein leerer Bereich.
 - Entfernungen in Kategorien: Zu Fuß, Fahrrad, Bahn
 - Adresse mit Pin-Icon
 
@@ -82,7 +83,7 @@ Exakte Struktur jeder Seite. Claude Code folgt diesem Blueprint.
 
 ### Sektion 12: WG-Typen
 - Section Header: "Für jeden das Richtige"
-- 4 Karten: Studenten, Mediziner, Inklusive, Senioren
+- 4 Karten: Studenten, Mediziner, Inklusive, Young Professionals
 - Jede Karte: Emoji, Titel, kurze Beschreibung, Link zur Unterseite
 - Kategorie-Badges in den jeweiligen Farben
 
@@ -103,7 +104,7 @@ Exakte Struktur jeder Seite. Claude Code folgt diesem Blueprint.
 
 ---
 
-## Unterseiten (studenten-wg.html, mediziner-wg.html, inklusive-wg.html, senioren-wg.html)
+## Unterseiten (studenten-wg.html, mediziner-wg.html, inklusive-wg.html, young-professionals-wg.html)
 
 Alle Unterseiten folgen dem gleichen Template:
 

@@ -137,7 +137,7 @@ EIN Karten-Stil für ALLES (Vorteile, Zimmer, Touren, Testimonials):
 | Studenten | `#10B981` (Primary) |
 | Mediziner | `#0EA5E9` (Accent) |
 | Inklusive | `#8B5CF6` (Violet) |
-| Senioren | `#F59E0B` (Amber) |
+| Young Professionals | `#F59E0B` (Amber) |
 
 ### Icons
 - Emoji-basiert (keine Icon-Library)
