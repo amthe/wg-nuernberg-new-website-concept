@@ -1,0 +1,10 @@
+# WG Nürnberg - robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://wg-nuernberg.de/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1

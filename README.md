@@ -5,7 +5,9 @@
 | Version | Link |
 |---------|------|
 | **Übersicht** | [amthe.github.io/wg-nuernberg-new-website-concept](https://amthe.github.io/wg-nuernberg-new-website-concept/) |
-| **V16 (aktuell)** | [Version 16 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v016/) |
+| **V18 (aktuell)** | [Version 18 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v018/) |
+| V17 | [Version 17 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v017/) |
+| V16 | [Version 16 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v016/) |
 | V15 | [Version 15 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v015/) |
 | V14 | [Version 14 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v014/) |
 | V13 | [Version 13 ansehen](https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v013/) |

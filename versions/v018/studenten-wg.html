@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Studenten-WG Nürnberg - Bezahlbare WG-Zimmer für Studierende in der Altstadt. Zentral gelegen, keine Provision, echte Flatrate.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://wg-nuernberg.de/studenten-wg.html">
+
+  <meta property="og:title" content="Studenten-WG Nürnberg - WG-Zimmer für Studierende">
+  <meta property="og:description" content="Bezahlbare WG-Zimmer für Studierende in der Nürnberger Altstadt. Zentral, keine Provision, echte Flatrate.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wg-nuernberg.de/studenten-wg.html">
+
+  <title>Studenten-WG - WG Nürnberg</title>
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    body { opacity: 0; }
+    body.loaded { opacity: 1; transition: opacity 0.3s ease; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": "https://wg-nuernberg.de/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Studenten-WG",
+        "item": "https://wg-nuernberg.de/studenten-wg.html"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Zum Hauptinhalt springen</a>
+  <div class="scroll-progress" role="progressbar" aria-label="Scroll-Fortschritt"></div>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="header__container">
+      <a href="/" class="header__logo" aria-label="WG Nürnberg - Startseite">
+        <img src="assets/logos/wg-nuernberg-grey-optimized.svg" alt="WG Nürnberg Logo" width="160" height="40">
+      </a>
+
+      <nav class="header__nav" role="navigation" aria-label="Hauptnavigation">
+        <ul class="header__nav-list">
+          <li><a href="index.html#ueber-uns" class="header__nav-link">Über uns</a></li>
+          <li class="header__dropdown">
+            <button class="header__dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              Unsere WGs
+              <svg class="header__dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="header__dropdown-menu" role="menu">
+              <a href="studenten-wg.html" class="header__dropdown-item" role="menuitem">
+                <span aria-hidden="true">🎓</span> Studenten-WG
+              </a>
+              <a href="mediziner-wg.html" class="header__dropdown-item" role="menuitem">
+                <span aria-hidden="true">🏥</span> Mediziner-WG
+              </a>
+              <a href="inklusive-wg.html" class="header__dropdown-item" role="menuitem">
+                <span aria-hidden="true">🤝</span> Inklusive-WG
+              </a>
+              <a href="senioren-wg.html" class="header__dropdown-item" role="menuitem">
+                <span aria-hidden="true">🏡</span> Senioren-WG
+              </a>
+            </div>
+          </li>
+          <li><a href="index.html#freie-zimmer" class="header__nav-link">Freie Zimmer</a></li>
+          <li><a href="index.html#lage" class="header__nav-link">Lage</a></li>
+          <li><a href="index.html#faq" class="header__nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="theme-toggle" aria-label="Farbschema wechseln" type="button">
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <a href="index.html#kontakt" class="btn btn--primary header__cta">Anfragen</a>
+        <button class="mobile-toggle" aria-label="Menü öffnen" aria-expanded="false" type="button">
+          <span class="mobile-toggle__line"></span>
+          <span class="mobile-toggle__line"></span>
+          <span class="mobile-toggle__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" role="navigation" aria-label="Mobile Navigation" aria-hidden="true">
+    <ul class="mobile-nav__list">
+      <li><a href="index.html#ueber-uns" class="mobile-nav__link">Über uns</a></li>
+      <li class="mobile-nav__dropdown">
+        <button class="mobile-nav__dropdown-toggle" aria-expanded="false">
+          Unsere WGs
+          <svg class="mobile-nav__dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="mobile-nav__dropdown-menu">
+          <a href="studenten-wg.html" class="mobile-nav__dropdown-item">
+            <span aria-hidden="true">🎓</span> Studenten-WG
+          </a>
+          <a href="mediziner-wg.html" class="mobile-nav__dropdown-item">
+            <span aria-hidden="true">🏥</span> Mediziner-WG
+          </a>
+          <a href="inklusive-wg.html" class="mobile-nav__dropdown-item">
+            <span aria-hidden="true">🤝</span> Inklusive-WG
+          </a>
+          <a href="senioren-wg.html" class="mobile-nav__dropdown-item">
+            <span aria-hidden="true">🏡</span> Senioren-WG
+          </a>
+        </div>
+      </li>
+      <li><a href="index.html#freie-zimmer" class="mobile-nav__link">Freie Zimmer</a></li>
+      <li><a href="index.html#lage" class="mobile-nav__link">Lage</a></li>
+      <li><a href="index.html#faq" class="mobile-nav__link">FAQ</a></li>
+    </ul>
+    <div class="mobile-nav__cta">
+      <a href="index.html#kontakt" class="btn btn--primary btn--full">Anfragen</a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- Subpage Hero -->
+    <section class="subpage-hero" aria-labelledby="subpage-title">
+      <div class="container">
+        <div class="subpage-hero__content reveal">
+          <div class="subpage-hero__emoji" aria-hidden="true">🎓</div>
+          <h1 id="subpage-title" class="subpage-hero__title">Studenten-WG</h1>
+          <p class="subpage-hero__description">Bezahlbar wohnen in bester Lage. Ideal für deinen Start ins Studium in Nürnberg.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section class="subpage-content" aria-labelledby="content-title">
+      <div class="container">
+        <div class="reveal">
+          <h2 id="content-title">Der perfekte Start ins Studium</h2>
+          <p>Unsere Studenten-WGs sind genau auf die Bedürfnisse von Studierenden zugeschnitten. Zentral in der Nürnberger Altstadt gelegen, erreichst du die TH Nürnberg und die FAU schnell und unkompliziert. Hier triffst du auf Gleichgesinnte aus verschiedenen Studiengängen und Ländern.</p>
+          <p>Das Beste: Du zahlst einen fairen Preis, der alle Nebenkosten bereits enthält. Keine bösen Überraschungen, keine Nachzahlungen. Und wenn du mal ein Semester im Ausland verbringst, finden wir gemeinsam eine Lösung.</p>
+        </div>
+
+        <div class="features-grid reveal">
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="8" x2="12" y2="12"/>
+                <line x1="12" y1="16" x2="12.01" y2="16"/>
+              </svg>
+            </div>
+            <div class="feature-card__content">
+              <h4>Keine Provision</h4>
+              <p>Direktvermietung ohne Maklergebühren</p>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 1v22"/>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+            <div class="feature-card__content">
+              <h4>Faire Preise</h4>
+              <p>Ab 400 € inkl. aller Nebenkosten</p>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+                <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
+                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+                <line x1="12" y1="20" x2="12.01" y2="20"/>
+              </svg>
+            </div>
+            <div class="feature-card__content">
+              <h4>Schnelles WLAN</h4>
+              <p>Highspeed-Internet in der Flatrate</p>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <div class="feature-card__content">
+              <h4>Flexible Laufzeit</h4>
+              <p>Mindestens 3 Monate, ideal fürs Semester</p>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <div class="feature-card__content">
+              <h4>Internationale WG</h4>
+              <p>Mitbewohner aus aller Welt</p>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="feature-card__content">
+              <h4>Zentrale Lage</h4>
+              <p>5 Min. zum Hauptbahnhof</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Freie Zimmer Studenten -->
+    <section class="section section--surface" aria-labelledby="rooms-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-header__eyebrow">Verfügbarkeit</span>
+          <h2 id="rooms-title" class="section-header__title">Freie Zimmer für Studierende</h2>
+        </header>
+
+        <div class="grid grid--2 reveal">
+          <article class="room-card">
+            <div class="room-card__header">
+              <div>
+                <span class="badge badge--studenten">Studenten</span>
+                <h3 class="room-card__title">Grasstraße 11</h3>
+              </div>
+            </div>
+            <div class="room-card__meta">
+              <div class="room-card__detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                </svg>
+                18 m²
+              </div>
+              <div class="room-card__detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+                4er WG
+              </div>
+            </div>
+            <div class="room-card__price">450 € <span>/ Monat inkl. Flatrate</span></div>
+            <div class="room-card__footer">
+              <span class="room-card__availability">Verfügbar ab <strong>01.04.2026</strong></span>
+              <a href="index.html#kontakt" class="btn btn--secondary">Anfragen</a>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <div class="room-card__header">
+              <div>
+                <span class="badge badge--studenten">Studenten</span>
+                <h3 class="room-card__title">Grasstraße 15</h3>
+              </div>
+            </div>
+            <div class="room-card__meta">
+              <div class="room-card__detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                </svg>
+                15 m²
+              </div>
+              <div class="room-card__detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+                5er WG
+              </div>
+            </div>
+            <div class="room-card__price">400 € <span>/ Monat inkl. Flatrate</span></div>
+            <div class="room-card__footer">
+              <span class="room-card__availability">Verfügbar ab <strong>Sofort</strong></span>
+              <a href="index.html#kontakt" class="btn btn--secondary">Anfragen</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" aria-labelledby="cta-title">
+      <div class="container reveal">
+        <h2 id="cta-title">Bereit für dein neues Zuhause?</h2>
+        <p>Schreib uns jetzt eine Nachricht und sichere dir dein Zimmer in einer unserer Studenten-WGs.</p>
+        <div class="cta-section__actions">
+          <a href="index.html#kontakt" class="btn btn--primary btn--large">Jetzt anfragen</a>
+          <a href="https://wa.me/4991112345678" class="btn btn--whatsapp btn--large" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="assets/logos/wg-nuernberg-vertical-grey-optimized.svg" alt="WG Nürnberg" width="120" height="48">
+          </div>
+          <p class="footer__description">Seit 2002 vermieten wir WG-Zimmer in der Nürnberger Altstadt.</p>
+          <div class="footer__social">
+            <a href="https://instagram.com/wgnuernberg" class="footer__social-link" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="https://facebook.com/wgnuernberg" class="footer__social-link" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__column">
+          <h4>Navigation</h4>
+          <ul class="footer__links">
+            <li><a href="index.html#ueber-uns" class="footer__link">Über uns</a></li>
+            <li><a href="index.html#freie-zimmer" class="footer__link">Freie Zimmer</a></li>
+            <li><a href="index.html#faq" class="footer__link">FAQ</a></li>
+            <li><a href="index.html#kontakt" class="footer__link">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4>WG-Typen</h4>
+          <ul class="footer__links">
+            <li><a href="studenten-wg.html" class="footer__link">Studenten-WG</a></li>
+            <li><a href="mediziner-wg.html" class="footer__link">Mediziner-WG</a></li>
+            <li><a href="inklusive-wg.html" class="footer__link">Inklusive-WG</a></li>
+            <li><a href="senioren-wg.html" class="footer__link">Senioren-WG</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4>Kontakt</h4>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>+49 911 12345678</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>info@wg-nuernberg.de</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 WG Nürnberg. Alle Rechte vorbehalten.</p>
+        <nav class="footer__legal" aria-label="Rechtliches">
+          <a href="#" class="footer__legal-link">Impressum</a>
+          <a href="#" class="footer__legal-link">Datenschutz</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
