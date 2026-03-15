@@ -1,0 +1,16 @@
+# robots.txt for WG Nürnberg
+# https://wg-nuernberg.de
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://wg-nuernberg.de/sitemap.xml
+
+# Crawl delay for polite crawling
+Crawl-delay: 1
+
+# Disallow sensitive paths (if any)
+Disallow: /api/
+Disallow: /admin/
+Disallow: /*.json$
