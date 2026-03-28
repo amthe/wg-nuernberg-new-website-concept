@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Young Professionals WG Nürnberg – Modernes Wohnen für Berufseinsteiger in der Altstadt. Networking, zentral, All-Inclusive.">
+    <meta name="keywords" content="Young Professionals WG Nürnberg, Berufseinsteiger WG, modernes Wohnen Nürnberg, WG-Zimmer Berufstätige">
+    <meta name="author" content="WG Nürnberg">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Young Professionals WG – WG Nürnberg">
+    <meta property="og:description" content="Modernes Wohnen für Berufseinsteiger in Nürnbergs Altstadt. Networking, zentral, All-Inclusive.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+
+    <title>Young Professionals WG – WG Nürnberg</title>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo" aria-label="WG Nürnberg Startseite">
+                    <img src="assets/logos/wg-nuernberg-grey-optimized.svg" alt="WG Nürnberg Logo" width="160" height="40">
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html#ueber-uns" class="nav-link">Über uns</a></li>
+                    <li class="nav-dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Unsere WGs
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                                <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="studenten-wg.html">Studenten-WG</a></li>
+                            <li><a href="mediziner-wg.html">Mediziner-WG</a></li>
+                            <li><a href="inklusive-wg.html">Inklusive WG</a></li>
+                            <li><a href="young-professionals-wg.html">Young Professionals</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#freie-zimmer" class="nav-link">Freie Zimmer</a></li>
+                    <li><a href="index.html#lage" class="nav-link">Lage</a></li>
+                    <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Farbschema wechseln">
+                        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                        </svg>
+                        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        </svg>
+                    </button>
+                    <a href="index.html#kontakt" class="btn btn-primary nav-cta">Anfragen</a>
+                    <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <div class="mobile-menu-handle"></div>
+        <nav class="mobile-nav">
+            <a href="index.html#ueber-uns" class="mobile-nav-link">Über uns</a>
+            <div class="mobile-dropdown">
+                <button class="mobile-nav-link mobile-dropdown-toggle" aria-expanded="false">
+                    Unsere WGs
+                    <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div class="mobile-dropdown-content">
+                    <a href="studenten-wg.html">Studenten-WG</a>
+                    <a href="mediziner-wg.html">Mediziner-WG</a>
+                    <a href="inklusive-wg.html">Inklusive WG</a>
+                    <a href="young-professionals-wg.html">Young Professionals</a>
+                </div>
+            </div>
+            <a href="index.html#freie-zimmer" class="mobile-nav-link">Freie Zimmer</a>
+            <a href="index.html#lage" class="mobile-nav-link">Lage</a>
+            <a href="index.html#faq" class="mobile-nav-link">FAQ</a>
+            <a href="index.html#kontakt" class="btn btn-primary mobile-cta">Jetzt anfragen</a>
+        </nav>
+    </div>
+
+    <main>
+        <section class="subpage-hero">
+            <div class="container">
+                <span class="eyebrow" aria-hidden="true">&#128188;</span>
+                <h1>Young Professionals WG</h1>
+                <p>Modernes Wohnen für Berufseinsteiger. Networking, zentrale Lage und alles inklusive.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content reveal">
+                        <span class="eyebrow">Für Berufseinsteiger</span>
+                        <h2>Ankommen und durchstarten</h2>
+                        <p>Du startest deinen ersten Job in Nürnberg? Unsere Young Professionals WGs bieten dir den perfekten Einstieg. Kein monatelanges Suchen, keine überteuerten Wohnungen – einfach einziehen und loslegen.</p>
+                        <p>In unserer Gemeinschaft triffst du auf andere junge Berufstätige aus verschiedenen Branchen und Ländern. Networking bei dir zu Hause – ganz nebenbei beim Kochen oder auf dem Balkon.</p>
+                    </div>
+                    <div class="about-image reveal reveal-delay-1">
+                        <img src="assets/img/allgemeinflaechen/foto_06.jpg" alt="Moderner Gemeinschaftsbereich für Young Professionals" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-surface">
+            <div class="container">
+                <header class="section-header reveal">
+                    <span class="eyebrow">Vorteile</span>
+                    <h2>Das spricht für unsere Young Professionals WGs</h2>
+                </header>
+                <div class="benefits-grid">
+                    <div class="card benefit-card reveal">
+                        <span class="benefit-icon" aria-hidden="true">&#128640;</span>
+                        <h3>Sofort einziehen</h3>
+                        <p>Möblierte Zimmer, keine Kaution-Wartezeiten. Ideal wenn du schnell für den neuen Job umziehen musst.</p>
+                    </div>
+                    <div class="card benefit-card reveal reveal-delay-1">
+                        <span class="benefit-icon" aria-hidden="true">&#127760;</span>
+                        <h3>Internationales Netzwerk</h3>
+                        <p>Triff Gleichgesinnte aus der ganzen Welt. Berufliche Kontakte entstehen ganz natürlich.</p>
+                    </div>
+                    <div class="card benefit-card reveal reveal-delay-2">
+                        <span class="benefit-icon" aria-hidden="true">&#128205;</span>
+                        <h3>Beste Innenstadtlage</h3>
+                        <p>Lorenzer Altstadt – zu Fuß zum Hauptbahnhof, umgeben von Restaurants, Kultur und Nightlife.</p>
+                    </div>
+                    <div class="card benefit-card reveal reveal-delay-3">
+                        <span class="benefit-icon" aria-hidden="true">&#128187;</span>
+                        <h3>Highspeed Internet</h3>
+                        <p>Zuverlässiges WLAN für Home-Office, Video-Calls und Streaming – alles inklusive.</p>
+                    </div>
+                    <div class="card benefit-card reveal reveal-delay-4">
+                        <span class="benefit-icon" aria-hidden="true">&#128176;</span>
+                        <h3>All-Inclusive Miete</h3>
+                        <p>Strom, Wasser, Heizung, Internet – ein Preis, keine Nebenkostenabrechnung.</p>
+                    </div>
+                    <div class="card benefit-card reveal reveal-delay-5">
+                        <span class="benefit-icon" aria-hidden="true">&#128197;</span>
+                        <h3>Flexible Verträge</h3>
+                        <p>Ab 6 Monate – perfekt als Übergangslösung oder langfristiges Zuhause.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <header class="section-header reveal">
+                    <span class="eyebrow">Verfügbare Zimmer</span>
+                    <h2>Freie Zimmer für Young Professionals</h2>
+                </header>
+                <div class="rooms-grid">
+                    <article class="card room-card reveal">
+                        <div class="room-image">
+                            <img src="assets/img/zimmer-moebliert/zimmer_04.jpg" alt="Modernes Zimmer für Young Professionals" loading="lazy">
+                            <span class="badge badge-yp">Young Professionals</span>
+                        </div>
+                        <div class="room-content">
+                            <h3>Premium-Zimmer Grassstraße</h3>
+                            <div class="room-details">
+                                <span>25 m²</span>
+                                <span>Möbliert</span>
+                            </div>
+                            <div class="room-meta">
+                                <span class="room-price">580 € / Monat</span>
+                                <span class="room-available">Ab 01.05.2026</span>
+                            </div>
+                            <a href="index.html#kontakt" class="btn btn-primary btn-sm">Anfragen</a>
+                        </div>
+                    </article>
+                    <article class="card room-card reveal reveal-delay-1">
+                        <div class="room-image">
+                            <img src="assets/img/zimmer-moebliert/zimmer_05.jpg" alt="Zimmer mit Balkon" loading="lazy">
+                            <span class="badge badge-yp">Young Professionals</span>
+                        </div>
+                        <div class="room-content">
+                            <h3>Zimmer mit Galerie Sternstraße</h3>
+                            <div class="room-details">
+                                <span>30 m²</span>
+                                <span>Möbliert</span>
+                            </div>
+                            <div class="room-meta">
+                                <span class="room-price">650 € / Monat</span>
+                                <span class="room-available">Ab 15.04.2026</span>
+                            </div>
+                            <a href="index.html#kontakt" class="btn btn-primary btn-sm">Anfragen</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-surface">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="eyebrow">Bereit?</span>
+                    <h2>Starte dein neues Kapitel in Nürnberg</h2>
+                    <p>Schreib uns – wir finden das perfekte Zimmer für deinen Berufsstart.</p>
+                    <div style="margin-top: var(--space-8);">
+                        <a href="index.html#kontakt" class="btn btn-primary btn-lg">Jetzt anfragen</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="faq">
+            <div class="container">
+                <header class="section-header reveal">
+                    <span class="eyebrow">FAQ</span>
+                    <h2>Häufige Fragen für Young Professionals</h2>
+                </header>
+                <div class="faq-list reveal">
+                    <div class="faq-item active">
+                        <button class="faq-question" aria-expanded="true">
+                            Kann ich Home-Office machen?
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 7.5L10 12.5L15 7.5"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Auf jeden Fall! Unsere Zimmer bieten genug Platz für einen Arbeitsplatz. Das WLAN ist schnell und stabil – perfekt für Video-Calls und konzentriertes Arbeiten.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Wie ist die Verkehrsanbindung?
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 7.5L10 12.5L15 7.5"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Perfekt! Hauptbahnhof in 6 Minuten zu Fuß, U-Bahn Opernhaus in 3 Minuten. Von hier erreichst du jeden Arbeitsplatz in der Region schnell.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Kann ich auch kurzfristig einziehen?
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 7.5L10 12.5L15 7.5"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Ja! Bei freien Zimmern ist der Einzug oft innerhalb weniger Tage möglich. Du brauchst keine Besichtigung – schau dir die 360° Touren und Fotos online an.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Wie hoch ist die Kaution?
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 7.5L10 12.5L15 7.5"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Die Kaution beträgt 800 € und wird bei Auszug vollständig zurückgezahlt, sofern das Zimmer in gutem Zustand zurückgegeben wird.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="assets/logos/wg-nuernberg-grey-optimized.svg" alt="WG Nürnberg" width="140" height="35">
+                    </a>
+                    <p>Seit 2002 dein Zuhause in der Nürnberger Altstadt. Möblierte WG-Zimmer für Studierende, Mediziner und Young Professionals.</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/4991120549840" aria-label="WhatsApp" target="_blank" rel="noopener">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        </a>
+                        <a href="mailto:info@wg-nuernberg.de" aria-label="E-Mail">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html#ueber-uns">Über uns</a></li>
+                        <li><a href="index.html#freie-zimmer">Freie Zimmer</a></li>
+                        <li><a href="index.html#lage">Lage</a></li>
+                        <li><a href="index.html#galerie">Galerie</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                        <li><a href="index.html#kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-wgs">
+                    <h4>WG-Typen</h4>
+                    <ul>
+                        <li><a href="studenten-wg.html">Studenten-WG</a></li>
+                        <li><a href="mediziner-wg.html">Mediziner-WG</a></li>
+                        <li><a href="inklusive-wg.html">Inklusive WG</a></li>
+                        <li><a href="young-professionals-wg.html">Young Professionals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <address>
+                        WG Nürnberg<br>Lorenzer Altstadt<br>90402 Nürnberg
+                    </address>
+                    <p>
+                        <a href="tel:+4991120549840">+49 911 20549840</a><br>
+                        <a href="mailto:info@wg-nuernberg.de">info@wg-nuernberg.de</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2002 - 2026 WG Nürnberg. Alle Rechte vorbehalten.</p>
+                <div class="footer-legal">
+                    <a href="index.html#impressum">Impressum</a>
+                    <a href="index.html#datenschutz">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
