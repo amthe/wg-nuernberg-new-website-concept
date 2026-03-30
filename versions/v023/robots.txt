@@ -1,0 +1,6 @@
+# robots.txt for WG Nürnberg
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.wg-nuernberg.de/sitemap.xml
