@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wg-nuernberg.de/sitemap.xml
