@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Inklusive-WG in Nürnberg - Barrierefreie WG-Zimmer für alle. Vielfalt leben, offen und zugänglich.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wg-nuernberg.de/inklusive-wg.html">
+  <meta property="og:title" content="Inklusive-WG Nürnberg - WG Nürnberg">
+  <meta property="og:description" content="Barrierefreie WG-Zimmer für alle. Vielfalt leben in der Altstadt.">
+  <title>Inklusive-WG - WG Nürnberg</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/logos/wg-nuernberg-grey-optimized.svg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://wg-nuernberg.de/"
+    }, {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Inklusive-WG",
+      "item": "https://wg-nuernberg.de/inklusive-wg.html"
+    }]
+  }
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Zum Hauptinhalt springen</a>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="assets/logos/wg-nuernberg-grey-optimized.svg" alt="WG Nürnberg Logo" width="40" height="40">
+        <span class="header__logo-text">WG Nürnberg</span>
+      </a>
+      <nav class="nav" aria-label="Hauptnavigation">
+        <ul class="nav__list">
+          <li><a href="index.html#about" class="nav__link">Über uns</a></li>
+          <li class="nav__dropdown">
+            <button class="nav__dropdown-toggle" aria-expanded="false">
+              Unsere WGs
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="nav__dropdown-menu">
+              <a href="studenten-wg.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon nav__dropdown-icon--studenten">🎓</span>
+                Studenten-WG
+              </a>
+              <a href="mediziner-wg.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon nav__dropdown-icon--mediziner">⚕️</span>
+                Mediziner-WG
+              </a>
+              <a href="inklusive-wg.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon nav__dropdown-icon--inklusive">🤝</span>
+                Inklusive-WG
+              </a>
+              <a href="young-professionals-wg.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon nav__dropdown-icon--professionals">💼</span>
+                Young Professionals-WG
+              </a>
+            </div>
+          </li>
+          <li><a href="index.html#rooms" class="nav__link">Freie Zimmer</a></li>
+          <li><a href="index.html#location" class="nav__link">Lage</a></li>
+          <li><a href="index.html#faq" class="nav__link">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="index.html#contact" class="btn btn--primary md:hidden">Anfragen</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Farbschema wechseln">
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+          </svg>
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menü öffnen">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav__list">
+      <li><a href="index.html#about" class="mobile-nav__link">Über uns</a></li>
+      <li>
+        <span class="mobile-nav__dropdown-title">Unsere WGs</span>
+        <div class="mobile-nav__dropdown-items">
+          <a href="studenten-wg.html" class="mobile-nav__dropdown-item">🎓 Studenten-WG</a>
+          <a href="mediziner-wg.html" class="mobile-nav__dropdown-item">⚕️ Mediziner-WG</a>
+          <a href="inklusive-wg.html" class="mobile-nav__dropdown-item">🤝 Inklusive-WG</a>
+          <a href="young-professionals-wg.html" class="mobile-nav__dropdown-item">💼 Young Professionals-WG</a>
+        </div>
+      </li>
+      <li><a href="index.html#rooms" class="mobile-nav__link">Freie Zimmer</a></li>
+      <li><a href="index.html#location" class="mobile-nav__link">Lage</a></li>
+      <li><a href="index.html#faq" class="mobile-nav__link">FAQ</a></li>
+    </ul>
+    <div class="mobile-nav__cta">
+      <a href="index.html#contact" class="btn btn--primary btn--full">Jetzt anfragen</a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- Subpage Hero -->
+    <section class="subpage-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html" class="breadcrumb__link">Home</a>
+          <span class="breadcrumb__separator">/</span>
+          <span class="breadcrumb__current">Inklusive-WG</span>
+        </nav>
+        <div class="subpage-hero__inner">
+          <div class="subpage-hero__icon subpage-hero__icon--inklusive">🤝</div>
+          <span class="badge badge--inklusive subpage-hero__badge">Für alle</span>
+          <h1 class="subpage-hero__title">Inklusive-WG</h1>
+          <p class="subpage-hero__description">Barrierefrei und offen für alle. Vielfalt leben in der Nürnberger Altstadt.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="section">
+      <div class="container">
+        <div class="two-col">
+          <div class="reveal">
+            <h2 class="mb-6">Wohnen ohne Barrieren</h2>
+            <p class="mb-6">Unsere Inklusive-WG steht für Offenheit, Vielfalt und Zugänglichkeit. Hier leben Menschen mit und ohne Behinderung zusammen — auf Augenhöhe und mit gegenseitigem Respekt.</p>
+            <p class="mb-6">Die Wohnung ist barrierefrei gestaltet: breite Türen, stufenloser Zugang, rollstuhlgerechte Bäder. Aber Inklusion bedeutet für uns mehr als bauliche Maßnahmen — es ist eine Haltung.</p>
+            <p>Wir glauben, dass Vielfalt bereichert. In unserer Inklusive-WG triffst du auf Menschen mit unterschiedlichen Hintergründen, Fähigkeiten und Perspektiven.</p>
+          </div>
+          <div class="about__image reveal">
+            <img src="assets/img/Allgemeinflächen/foto_05.jpg" alt="Inklusive-WG Gemeinschaftsbereich" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section section--surface">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-header__eyebrow">Vorteile</span>
+          <h2 class="section-header__title">Was die Inklusive-WG auszeichnet</h2>
+        </div>
+        <div class="grid grid--3 reveal-stagger">
+          <div class="card feature-card">
+            <div class="feature-card__icon">♿</div>
+            <h3 class="feature-card__title">Barrierefrei</h3>
+            <p class="feature-card__description">Stufenloser Zugang, breite Türen, rollstuhlgerechte Bäder.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-card__icon">🌈</div>
+            <h3 class="feature-card__title">Vielfalt</h3>
+            <p class="feature-card__description">Offen für alle Menschen, unabhängig von Herkunft oder Fähigkeiten.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-card__icon">🤗</div>
+            <h3 class="feature-card__title">Gemeinschaft</h3>
+            <p class="feature-card__description">Zusammenleben auf Augenhöhe mit gegenseitiger Unterstützung.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-card__icon">📍</div>
+            <h3 class="feature-card__title">Zentrale Lage</h3>
+            <p class="feature-card__description">Mitten in der Altstadt. Alles ist gut erreichbar.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-card__icon">💰</div>
+            <h3 class="feature-card__title">Bezahlbar</h3>
+            <p class="feature-card__description">Faire Preise ab 450€ all-in. Keine versteckten Kosten.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-card__icon">👥</div>
+            <h3 class="feature-card__title">Unterstützung</h3>
+            <p class="feature-card__description">Unser Team ist immer ansprechbar und hilft bei Fragen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Available Rooms -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-header__eyebrow">Freie Zimmer</span>
+          <h2 class="section-header__title">Jetzt verfügbar in der Inklusive-WG</h2>
+        </div>
+        <div class="grid grid--3 reveal-stagger">
+          <article class="card">
+            <div class="card__image">
+              <img src="assets/img/Zimmer unmöbliert/raum_03.jpg" alt="Barrierefreies Zimmer" loading="lazy">
+              <span class="badge badge--inklusive card__badge">Inklusive-WG</span>
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">Zimmer Sterngasse 4</h3>
+              <div class="card__meta">
+                <span class="card__meta-item">📐 20 m²</span>
+                <span class="card__meta-item">♿ Barrierefrei</span>
+              </div>
+              <div class="card__price">450€ <span class="card__price-label">/ Monat</span></div>
+              <a href="index.html#contact" class="btn btn--primary btn--full" style="margin-top: var(--space-4);">Anfragen</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__image">
+              <img src="assets/img/Zimmer unmöbliert/raum_11.jpg" alt="Barrierefreies Zimmer" loading="lazy">
+              <span class="badge badge--inklusive card__badge">Inklusive-WG</span>
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">Zimmer Sterngasse 6</h3>
+              <div class="card__meta">
+                <span class="card__meta-item">📐 22 m²</span>
+                <span class="card__meta-item">♿ Barrierefrei</span>
+              </div>
+              <div class="card__price">470€ <span class="card__price-label">/ Monat</span></div>
+              <a href="index.html#contact" class="btn btn--primary btn--full" style="margin-top: var(--space-4);">Anfragen</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__image">
+              <img src="assets/img/Zimmer möbliert/zimmer_05.jpg" alt="Möbliertes Zimmer" loading="lazy">
+              <span class="badge badge--inklusive card__badge">Inklusive-WG</span>
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">Zimmer Sterngasse 2</h3>
+              <div class="card__meta">
+                <span class="card__meta-item">📐 18 m²</span>
+                <span class="card__meta-item">🛋️ Möbliert</span>
+              </div>
+              <div class="card__price">480€ <span class="card__price-label">/ Monat</span></div>
+              <a href="index.html#contact" class="btn btn--primary btn--full" style="margin-top: var(--space-4);">Anfragen</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section section--surface">
+      <div class="container text-center">
+        <div class="section-header reveal">
+          <span class="section-header__eyebrow">Keine Besichtigung nötig</span>
+          <h2 class="section-header__title">Schau dir alles online an</h2>
+          <p class="section-header__description">360° Touren, Fotos und Video-Calls — du brauchst nicht anzureisen.</p>
+        </div>
+        <div class="reveal">
+          <a href="index.html#tours" class="btn btn--primary btn--lg">Zu den 360° Touren</a>
+          <a href="index.html#contact" class="btn btn--secondary btn--lg" style="margin-left: var(--space-4);">Jetzt anfragen</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <img src="assets/logos/wg-nuernberg-grey-optimized.svg" alt="WG Nürnberg" width="36" height="36">
+            <span class="footer__logo-text">WG Nürnberg</span>
+          </a>
+          <p class="footer__description">Dein WG-Zimmer in der Lorenzer Altstadt. Seit 2002.</p>
+        </div>
+        <div>
+          <h4 class="footer__title">Navigation</h4>
+          <ul class="footer__links">
+            <li><a href="index.html#about" class="footer__link">Über uns</a></li>
+            <li><a href="index.html#rooms" class="footer__link">Freie Zimmer</a></li>
+            <li><a href="index.html#contact" class="footer__link">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__title">WG-Typen</h4>
+          <ul class="footer__links">
+            <li><a href="studenten-wg.html" class="footer__link">Studenten-WG</a></li>
+            <li><a href="mediziner-wg.html" class="footer__link">Mediziner-WG</a></li>
+            <li><a href="inklusive-wg.html" class="footer__link">Inklusive-WG</a></li>
+            <li><a href="young-professionals-wg.html" class="footer__link">Young Professionals</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__title">Kontakt</h4>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Vordere Sterngasse 2a, 90402 Nürnberg
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2024 WG Nürnberg GmbH</p>
+        <div class="footer__legal">
+          <a href="impressum.html" class="footer__legal-link">Impressum</a>
+          <a href="datenschutz.html" class="footer__legal-link">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

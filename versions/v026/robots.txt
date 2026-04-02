@@ -1,0 +1,15 @@
+# WG Nürnberg - robots.txt
+# https://wg-nuernberg.de
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://wg-nuernberg.de/sitemap.xml
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /api/
+
+# Allow all assets
+Allow: /assets/
