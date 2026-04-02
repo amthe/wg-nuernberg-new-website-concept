@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inklusive WG in Nürnberg - Vielfältiges Zusammenleben für alle. Barrierearm, offen für jede Herkunft und Lebensweise. Gemeinschaft und Respekt.">
+    <meta name="keywords" content="Inklusive WG Nürnberg, WG Zimmer barrierefrei, Diversity WG, WG für alle, Gemeinschaftliches Wohnen">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wg-nuernberg.de/inklusive-wg.html">
+    <meta property="og:title" content="Inklusive WG Nürnberg - Vielfalt leben">
+    <meta property="og:description" content="WG-Zimmer für alle Menschen in der Nürnberger Altstadt. Offen, respektvoll, gemeinschaftlich.">
+    <meta property="og:image" content="assets/img/Zimmer möbliert/zimmer_02.jpg">
+
+    <title>Inklusive WG - WG Nürnberg</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Header -->
+    <header class="header scrolled" id="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo" aria-label="WG Nürnberg Startseite">
+                <img src="assets/img/logos/wg-nuernberg-grey-optimized.svg" alt="WG Nürnberg Logo" width="140" height="40">
+            </a>
+
+            <nav class="nav-desktop" aria-label="Hauptnavigation">
+                <ul class="nav-list">
+                    <li><a href="index.html#ueber-uns" class="nav-link">Über uns</a></li>
+                    <li class="nav-dropdown">
+                        <button class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+                            Unsere WGs
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                                <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="studenten-wg.html">🎓 Studenten-WG</a></li>
+                            <li><a href="mediziner-wg.html">🩺 Mediziner-WG</a></li>
+                            <li><a href="inklusive-wg.html">🤝 Inklusive WG</a></li>
+                            <li><a href="young-professionals-wg.html">💼 Young Professionals</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#freie-zimmer" class="nav-link">Freie Zimmer</a></li>
+                    <li><a href="index.html#lage" class="nav-link">Lage</a></li>
+                    <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Farbschema wechseln">
+                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+                    </svg>
+                </button>
+                <a href="index.html#kontakt" class="btn btn-primary btn-sm header-cta">Anfragen</a>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menü öffnen" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+
+        <nav class="nav-mobile" id="nav-mobile" aria-label="Mobile Navigation" hidden>
+            <ul class="nav-mobile-list">
+                <li><a href="index.html#ueber-uns" class="nav-mobile-link">Über uns</a></li>
+                <li class="nav-mobile-group">
+                    <button class="nav-mobile-link nav-mobile-group-trigger" aria-expanded="false">
+                        Unsere WGs
+                        <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                            <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <ul class="nav-mobile-submenu" hidden>
+                        <li><a href="studenten-wg.html">🎓 Studenten-WG</a></li>
+                        <li><a href="mediziner-wg.html">🩺 Mediziner-WG</a></li>
+                        <li><a href="inklusive-wg.html">🤝 Inklusive WG</a></li>
+                        <li><a href="young-professionals-wg.html">💼 Young Professionals</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#freie-zimmer" class="nav-mobile-link">Freie Zimmer</a></li>
+                <li><a href="index.html#lage" class="nav-mobile-link">Lage</a></li>
+                <li><a href="index.html#faq" class="nav-mobile-link">FAQ</a></li>
+                <li><a href="index.html#kontakt" class="btn btn-primary btn-block">Jetzt anfragen</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Subpage Hero -->
+        <section class="subpage-hero">
+            <div class="container">
+                <span class="subpage-hero-icon">🤝</span>
+                <h1 class="subpage-hero-title">Inklusive WG</h1>
+                <p class="subpage-hero-description">Vielfältiges Zusammenleben für alle Menschen. Offen, respektvoll und gemeinschaftlich – unabhängig von Herkunft oder Hintergrund.</p>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="eyebrow">Vorteile</span>
+                    <h2 class="section-title">Gemeinsam vielfältig leben</h2>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-item reveal">
+                        <span class="feature-icon">🌍</span>
+                        <div class="feature-content">
+                            <h3>Internationale Vielfalt</h3>
+                            <p>Über 20 Nationalitäten leben bei uns zusammen – ein echtes Zuhause für Menschen aus aller Welt.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal">
+                        <span class="feature-icon">♿</span>
+                        <div class="feature-content">
+                            <h3>Barrierearme Zimmer</h3>
+                            <p>Ausgewählte Zimmer im Erdgeschoss mit breiten Türen und ebenerdigen Zugängen verfügbar.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal">
+                        <span class="feature-icon">💜</span>
+                        <div class="feature-content">
+                            <h3>LGBTQ+ freundlich</h3>
+                            <p>Bei uns ist jeder willkommen – wir leben Toleranz und gegenseitigen Respekt im Alltag.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal">
+                        <span class="feature-icon">🤗</span>
+                        <div class="feature-content">
+                            <h3>Offene Gemeinschaft</h3>
+                            <p>Gemeinsame Kochevents, Spieleabende und kultureller Austausch – so viel oder wenig du magst.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal">
+                        <span class="feature-icon">📝</span>
+                        <div class="feature-content">
+                            <h3>Einfache Anmeldung</h3>
+                            <p>Unkomplizierter Mietvertrag – auch ohne deutsches Konto oder SCHUFA möglich.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal">
+                        <span class="feature-icon">🗣️</span>
+                        <div class="feature-content">
+                            <h3>Mehrsprachige Betreuung</h3>
+                            <p>Unser Team spricht Deutsch, Englisch und weitere Sprachen – wir helfen dir gerne.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accessibility -->
+        <section class="section section-surface">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="eyebrow">Infrastruktur</span>
+                    <h2 class="section-title">Alles in der Nähe</h2>
+                    <p class="section-description">Wichtige Anlaufstellen für deinen Alltag sind gut erreichbar.</p>
+                </div>
+                <div class="universities-grid">
+                    <div class="card university-card reveal">
+                        <span class="university-name">Hauptbahnhof Nürnberg</span>
+                        <span class="university-distance">🚶 10 min</span>
+                    </div>
+                    <div class="card university-card reveal">
+                        <span class="university-name">Ausländerbehörde</span>
+                        <span class="university-distance">🚇 15 min</span>
+                    </div>
+                    <div class="card university-card reveal">
+                        <span class="university-name">Integrationszentrum</span>
+                        <span class="university-distance">🚴 8 min</span>
+                    </div>
+                    <div class="card university-card reveal">
+                        <span class="university-name">VHS Nürnberg (Sprachkurse)</span>
+                        <span class="university-distance">🚶 12 min</span>
+                    </div>
+                    <div class="card university-card reveal">
+                        <span class="university-name">Jobcenter Nürnberg</span>
+                        <span class="university-distance">🚇 10 min</span>
+                    </div>
+                    <div class="card university-card reveal">
+                        <span class="university-name">Beratungsstelle AWO</span>
+                        <span class="university-distance">🚴 7 min</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Available Rooms -->
+        <section class="section" id="freie-zimmer">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="eyebrow">Freie Zimmer</span>
+                    <h2 class="section-title">Aktuell verfügbar</h2>
+                </div>
+                <div class="room-grid">
+                    <article class="card room-card reveal">
+                        <div class="room-image">
+                            <img src="assets/img/Zimmer möbliert/zimmer_01.jpg" alt="Zimmer 15.1.22 möbliert" loading="lazy">
+                            <span class="badge badge-inklusive">Inklusiv</span>
+                        </div>
+                        <div class="room-content">
+                            <div class="room-header">
+                                <h3 class="room-number">15.1.22</h3>
+                                <span class="room-size">12 m²</span>
+                            </div>
+                            <ul class="room-features">
+                                <li>Möbliert</li>
+                                <li>Erdgeschoss</li>
+                            </ul>
+                            <div class="room-prices">
+                                <div class="price-item">
+                                    <span class="price-label">Miete</span>
+                                    <span class="price-value">202,99 €</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="price-label">All-in</span>
+                                    <span class="price-value price-total">429 €</span>
+                                </div>
+                            </div>
+                            <p class="room-available">Verfügbar ab <strong>15. April</strong></p>
+                            <a href="index.html#kontakt" class="btn btn-primary btn-block">Anfragen</a>
+                        </div>
+                    </article>
+
+                    <article class="card room-card reveal">
+                        <div class="room-image">
+                            <img src="assets/img/Zimmer möbliert/zimmer_02.jpg" alt="Zimmer 15.1.23 möbliert" loading="lazy">
+                            <span class="badge badge-inklusive">Inklusiv</span>
+                        </div>
+                        <div class="room-content">
+                            <div class="room-header">
+                                <h3 class="room-number">15.1.23</h3>
+                                <span class="room-size">15 m²</span>
+                            </div>
+                            <ul class="room-features">
+                                <li>Möbliert</li>
+                                <li>Barrierefrei</li>
+                            </ul>
+                            <div class="room-prices">
+                                <div class="price-item">
+                                    <span class="price-label">Miete</span>
+                                    <span class="price-value">200,99 €</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="price-label">All-in</span>
+                                    <span class="price-value price-total">452 €</span>
+                                </div>
+                            </div>
+                            <p class="room-available">Verfügbar ab <strong>15. April</strong></p>
+                            <a href="index.html#kontakt" class="btn btn-primary btn-block">Anfragen</a>
+                        </div>
+                    </article>
+
+                    <article class="card room-card reveal">
+                        <div class="room-image">
+                            <img src="assets/img/Zimmer möbliert/zimmer_04.jpg" alt="Zimmer 15.1.26 mit Fenster" loading="lazy">
+                            <span class="badge badge-inklusive">Inklusiv</span>
+                        </div>
+                        <div class="room-content">
+                            <div class="room-header">
+                                <h3 class="room-number">15.1.26</h3>
+                                <span class="room-size">14 m²</span>
+                            </div>
+                            <ul class="room-features">
+                                <li>Teilmöbliert</li>
+                                <li>Ruhige Lage</li>
+                            </ul>
+                            <div class="room-prices">
+                                <div class="price-item">
+                                    <span class="price-label">Miete</span>
+                                    <span class="price-value">200,99 €</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="price-label">All-in</span>
+                                    <span class="price-value price-total">452 €</span>
+                                </div>
+                            </div>
+                            <p class="room-available">Verfügbar ab <strong>15. April</strong></p>
+                            <a href="index.html#kontakt" class="btn btn-primary btn-block">Anfragen</a>
+                        </div>
+                    </article>
+                </div>
+                <p class="rooms-footer reveal">🔄 Aktualisiert täglich um 08:00 Uhr · Zuordnung ist flexibel</p>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2 class="cta-title reveal">Keine Besichtigung nötig</h2>
+                <p class="cta-text reveal">Erkunde dein zukünftiges Zimmer mit unseren 360° Touren, Fotos und Video-Calls – alles online, ohne vor Ort sein zu müssen.</p>
+                <div class="reveal">
+                    <a href="index.html#kontakt" class="btn btn-primary btn-lg">Jetzt anfragen</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/img/logos/wg-nuernberg-grey-optimized.svg" alt="WG Nürnberg Logo" width="120" height="35" class="footer-logo">
+                    <p class="footer-tagline">Dein Zuhause in der Nürnberger Altstadt seit 2002.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul>
+                        <li><a href="index.html#ueber-uns">Über uns</a></li>
+                        <li><a href="index.html#freie-zimmer">Freie Zimmer</a></li>
+                        <li><a href="index.html#lage">Lage</a></li>
+                        <li><a href="index.html#galerie">Galerie</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                        <li><a href="index.html#kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-title">WG-Typen</h4>
+                    <ul>
+                        <li><a href="studenten-wg.html">Studenten-WG</a></li>
+                        <li><a href="mediziner-wg.html">Mediziner-WG</a></li>
+                        <li><a href="inklusive-wg.html">Inklusive WG</a></li>
+                        <li><a href="young-professionals-wg.html">Young Professionals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="footer-title">Kontakt</h4>
+                    <address>
+                        <p>Grasstraße 15<br>90403 Nürnberg</p>
+                        <p><a href="tel:+4991123456789">+49 911 23456789</a></p>
+                        <p><a href="mailto:info@wg-nuernberg.de">info@wg-nuernberg.de</a></p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 WG Nürnberg. Alle Rechte vorbehalten.</p>
+                <div class="footer-legal">
+                    <a href="#">Impressum</a>
+                    <a href="#">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/4991123456789" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp Kontakt">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <script src="main.js"></script>
+</body>
+</html>
