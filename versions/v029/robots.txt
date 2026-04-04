@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amthe.github.io/wg-nuernberg-new-website-concept/versions/v029/sitemap.xml
